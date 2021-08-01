@@ -20,6 +20,17 @@
 }
 
 h1 {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 76px;
+  letter-spacing: 2px;
+  color: var(--ligth-wight);
+}
+
+h2 {
   font-family: "Forum";
   font-style: normal;
   font-weight: normal;
@@ -30,15 +41,15 @@ h1 {
   color: var(--ligth-wight);
   margin: 0;
 }
-h2 {
-  font-family: "Forum";
+h3 {
+  font-family: "Forum", cursive;
   font-style: normal;
   font-weight: normal;
-  font-size: 80px;
-  line-height: 90px;
+  font-size: 32px;
+  line-height: 35px;
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: var(--gold-text);
+  padding-bottom: 10px;
   margin: 0;
 }
 
@@ -49,6 +60,13 @@ html {
 body {
   font-family: "Roboto";
   margin: 0px;
+}
+li {
+  list-style-type: none; /* Убираем маркеры */
+}
+ul {
+  margin-left: 0; /* Отступ слева в браузере IE и Opera */
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
 }
 .center {
   min-width: 310px;
@@ -113,11 +131,17 @@ body {
 .video-section {
   padding: 90px 0 75px 0;
 }
+
 /*page-1*/
 .container-1 {
   margin: 0 auto;
   display: flex;
   max-width: 1440px;
+}
+.container-photo {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1920px;
 }
 .page-1 {
   width: 750px;
@@ -126,23 +150,20 @@ body {
   position: absolute;
 }
 
-.text {
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 28px;
-  line-height: 33px;
-  margin-bottom: 76px;
-}
 .darck-red-btn {
   background: var(--dark-red);
-  width: 360px;
-  padding: 24px 68px;
+  padding: 10px 68px;
+  border-color: var(--dark-red);
   border-radius: 10px;
+}
+button.darck-red-btn:hover {
+  background-color: var(--font-gold);
+  border-color: var(--font-gold);
+  transition: 1s;
 }
 .backphoto1 {
   width: 1215px;
   height: 750px;
-  padding-left: 465px;
 }
 
 /*2-d page*/
@@ -179,17 +200,15 @@ body {
   height: 285px;
   padding: 75px 0 25px 0;
 }
-.picture-name {
-  font-family: "Forum", cursive;
-  font-size: 32px;
-  line-height: 35px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-}
+
 .gold-line-small {
   width: 300px;
   height: 2px;
+}
+
+.gold-line-small:hover {
+  width: 440px;
+  transition: 0.5s;
 }
 .bigger-tuor {
   font-family: "Roboto";
@@ -211,7 +230,7 @@ body {
   display: flex;
   flex-direction: row;
 }
-.picture-explore {
+.p-explore {
   color: var(--ligth-wight);
   padding-top: 64px;
 }
@@ -332,7 +351,13 @@ body {
 .social-links:last-child {
   padding-right: 0;
 }
+.social-links:hover {
+  color: var(--font-gold);
+}
 
 .links-in-nav-icons {
   margin-left: 398px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
 }
