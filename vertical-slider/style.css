@@ -1,0 +1,111 @@
+.courusel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(50%, 50%);
+}
+.items-conteiner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+.item {
+  display: none;
+  position: relative;
+  animation: 0.5s ease-in-out;
+  margin: 0 auto;
+}
+.active,
+.next {
+  display: block;
+}
+.next {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.description {
+  margin: 30px 20%;
+  font-size: 32px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+.project-name {
+  padding: 10px;
+}
+.control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 15%;
+  cursor: pointer;
+}
+.control.down {
+  left: 0;
+  top: auto;
+}
+.control.up {
+  right: 0;
+  left: auto;
+}
+.arrow {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  font-size: 84px;
+  transform: translateY(-50%);
+}
+.arrow.up {
+  right: 50%;
+}
+
+.to-down {
+  animation-name: down;
+}
+.from-up {
+  animation-name: up;
+}
+.to-up {
+  animation-name: up;
+  animation-direction: reverse;
+}
+.from-down {
+  animation-name: down;
+  animation-direction: reverse;
+}
+@keyframes down {
+  from {
+    down: 0;
+  }
+  to {
+    down: -100%;
+  }
+}
+@keyframes up {
+  from {
+    up: 100%;
+  }
+  to {
+    up: 0;
+  }
+}
+@media (max-width: 960px) {
+  .description {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 640px) {
+  .control > .arrow {
+    display: none;
+  }
+  .project-name {
+    display: none;
+  }
+  .description {
+    border: 0;
+  }
+}
