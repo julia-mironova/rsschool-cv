@@ -17,7 +17,7 @@ I'm searching for knowledge about how it works, how I can make workable webpages
 
 **E:** *rabkevich15@gmail.com*\
 **Tel:** _+48-515-412-099_\
-**Viber/ Wats up:** _+375-29-269-45-03_
+**Viber/ Wats up:** _+375-29-269-45-03_\
 **Video:\***_[ About me](https://photos.app.goo.gl/teEz1NL8FhWVLdZh9)_\*
 
 ##### Soft skills
@@ -58,8 +58,6 @@ I'm searching for knowledge about how it works, how I can make workable webpages
    _stringify(new Node(1, new Node(2, new Node(3))));_
    //console.log(`${result}`);
    ```
-
-````
 
 ### My experience
 
@@ -104,4 +102,7 @@ Power supply engineer, 2011
 ```
 
 ![alt](juli-to-resume-bw-min.jpg)
-````
+
+```
+
+```
