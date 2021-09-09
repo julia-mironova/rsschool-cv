@@ -43,6 +43,7 @@ I'm searching for knowledge about how it works, how I can make workable webpages
 2. [CV-Mironava](https://affectionate-agnesi-6b360b.netlify.app/) \_\_\_ [2021]
 3. About insults _(working)_ \_\_\_ [2022]
 4. **Code exemple:**
+   ```
    function _stringify(list)_ {
    let result = \"\";
    result = JSON.stringify(new Node(list));
@@ -56,6 +57,9 @@ I'm searching for knowledge about how it works, how I can make workable webpages
    }
    _stringify(new Node(1, new Node(2, new Node(3))));_
    //console.log(`${result}`);
+   ```
+
+````
 
 ### My experience
 
@@ -100,3 +104,4 @@ Power supply engineer, 2011
 ```
 
 ![alt](juli-to-resume-bw-min.jpg)
+````
