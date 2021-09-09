@@ -3,7 +3,8 @@
 I am _beginner front-end developer_ from Belarus, which is living in Wroclaw now.
 I'm searching for knowledge about how it works, how I can make workable webpages by myself.
 
-> I am already completed 2 weeks courses for beginners from **Ukranium school GoIT** (online). Also I made a small project for _**Fundacia WiWa** (children with cancer)_.
+> I'm finished **stage#0** and continue on **stage#1** in **Rsschool**.
+> Also I completed 2 weeks courses for beginners from **Ukranium school GoIT** (online). Also I made a small project for _**Fundacia WiWa** (children with cancer)_.
 
 - The main benefits for me:
   - find an interesting job for all my live
@@ -17,6 +18,7 @@ I'm searching for knowledge about how it works, how I can make workable webpages
 **E:** *rabkevich15@gmail.com*\
 **Tel:** _+48-515-412-099_\
 **Viber/ Wats up:** _+375-29-269-45-03_
+**Video:\***_[ About me](https://photos.app.goo.gl/teEz1NL8FhWVLdZh9)_\*
 
 ##### Soft skills
 
@@ -25,7 +27,7 @@ I'm searching for knowledge about how it works, how I can make workable webpages
 - tolerant
 - brave
 
-###### My waiting
+###### My waitings
 
 1. interesting tasks
 2. knowledge
@@ -40,11 +42,26 @@ I'm searching for knowledge about how it works, how I can make workable webpages
 1. [Fundacia WiWa](https://stupefied-jepsen-ef824c.netlify.app/) \_\_\_ [2021]
 2. [CV-Mironava](https://affectionate-agnesi-6b360b.netlify.app/) \_\_\_ [2021]
 3. About insults _(working)_ \_\_\_ [2022]
+4. **Code exemple:**
+   function _stringify(list)_ {
+   let result = \"\";
+   result = JSON.stringify(new Node(list));
+   let answer = result.replace(/[^+\d]/g, " ");
+   answer = answer.replace(/\s{2,}/g, " ");
+   answer = answer.substring(1);
+   let answerOk = answer.replace(/\s{1,}/g, " -> ");
+   answerOk = answerOk + "null";
+   console.log(answerOk);
+   return answerOk;
+   }
+   _stringify(new Node(1, new Node(2, new Node(3))));_
+   //console.log(`${result}`);
 
 ### My experience
 
-**February 2021 starting live in Poland.**\
-Mowing with husband, 6 years child and cat. Learn polish, JS, Git in the same time.
+**September 2021 finished _stage#0_ Rs-school**
+**February 2021 starting live in Poland**\ (Mowing with husband, 6 years child and cat)
+**Learn Polish, JS, Git in the same time**
 
 - have to change profession to Frond-end developer
 - have to make ours live comfortable
@@ -55,17 +72,17 @@ Mowing with husband, 6 years child and cat. Learn polish, JS, Git in the same ti
 
 We helped factories to work safety for around and for people (with boilers). Also we made other important work:
 
-- changed oxygen stations at hospitals
-- improved cubmasters for making metal at "Minskaia bearing factory"
-- made automation system for data collection on Microsoft excel
+- changed oxygen stations at hospitals;
+- improved cubmasters for making metal at "Minskaia bearing factory";
+- made automation system for data collection on Microsoft excel;
 
 #### SST Bartec (2012-2018)
 
 It was cool and great experience with clever teacher.
 
-- learned how make a correct contract with customer
-- learned how works electricity lines
-- made a projects in team about heating systems
+- learned how make a correct contract with customer;
+- learned how works electricity lines;
+- made a projects in team about heating systems;
 
 ### My education
 
