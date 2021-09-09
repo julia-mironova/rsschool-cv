@@ -1,0 +1,106 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+
+  background-color: rgb(242, 248, 248);
+}
+
+/*main section*/
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.1rem 0;
+}
+
+.main-contener-section {
+  display: flex;
+  flex-direction: row-reverse;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px 50px;
+}
+.main-section {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  background-color: #fff;
+  margin: 40px auto;
+}
+.about-me,
+.projects,
+.my-experience,
+.my-education {
+  background-color: rgb(227, 227, 236);
+  margin: 50px;
+  padding: 20px;
+}
+.name {
+  text-align: center;
+}
+.sites {
+  text-decoration: none;
+  color: black;
+}
+.blue {
+  color: blue;
+}
+
+/*footer*/
+footer {
+  display: flex;
+  background-color: rgb(227, 227, 236);
+  margin: 50px;
+  padding: 20px;
+}
+.logo {
+  width: 120px;
+  margin-right: 20px;
+}
+.time {
+  margin: 16px 0px 16px 40px;
+  text-align: center;
+  font-size: 24px;
+}
+/* bar section properties */
+.bar-section {
+  background-color: rgb(71, 69, 68);
+  width: 370px;
+  padding: 40px 0px;
+  color: #fff;
+}
+.photo {
+  width: 370px;
+  height: 350px;
+}
+
+/* contacts-section-link styles */
+
+.contacts-section-link {
+  font-size: 15px;
+  line-height: 24px;
+  color: aliceblue;
+}
+.orange-circle {
+  color: orange;
+  font-size: 14px;
+  line-height: 24px;
+}
+.wight-color-text {
+  color: #fff;
+  width: 121px;
+  height: 203px;
+  left: 80px;
+  top: 615px;
+}
+.contacts-section,
+.my-waitings,
+.tex-soft-scils {
+  margin: 50px 0 0 25px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.navigation {
+  color: #fff;
+  text-decoration: none;
+}

@@ -1,0 +1,363 @@
+:root {
+  --bg-dark: #151719;
+  --dark-red: #710707;
+  --font-gold: #9d8665;
+  --ligth-wight: #ffffff;
+  --font1: 80px;
+  --font2: 32px;
+  --gold-text: #caaa7d;
+}
+@media (max-width: 1950px) {
+  :root {
+    --font1: 50px;
+    --font2: 28px;
+  }
+}
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("assets/fonts/RobotoThin.ttf");
+  font-weight: 200;
+}
+
+h1 {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 76px;
+  letter-spacing: 2px;
+  color: var(--ligth-wight);
+}
+
+h2 {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--ligth-wight);
+  margin: 0;
+}
+h3 {
+  font-family: "Forum", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto";
+  margin: 0px;
+}
+li {
+  list-style-type: none; /* Убираем маркеры */
+}
+ul {
+  margin-left: 0; /* Отступ слева в браузере IE и Opera */
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+.center {
+  min-width: 310px;
+  width: 100%;
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.header-container {
+  padding: 75px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+.louvre {
+  font-family: "Forum", cursive;
+  font-size: 28px;
+  line-height: 50px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--ligth-wight);
+  text-decoration: none;
+  margin: 0px 525px 0 20px;
+}
+.links-in-nav {
+  font-family: "Roboto";
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 50px;
+  letter-spacing: 2px;
+  color: var(--ligth-wight);
+  text-decoration: none;
+  margin-right: 76px;
+}
+.links-in-nav-btn {
+  font-family: "Roboto";
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 50px;
+  letter-spacing: 2px;
+  color: var(--ligth-wight);
+  text-decoration: none;
+  margin-right: 76px;
+}
+.links-in-nav:last-child {
+  margin-right: 0;
+}
+/*main page*/
+
+.dark-section {
+  background-color: var(--bg-dark);
+  margin: 0;
+}
+.video-section {
+  padding: 90px 0 75px 0;
+}
+
+/*page-1*/
+.container-1 {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1440px;
+}
+.container-photo {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1920px;
+}
+.page-1 {
+  width: 750px;
+  height: 390px;
+  padding-top: 115px;
+  position: absolute;
+}
+
+.darck-red-btn {
+  background: var(--dark-red);
+  padding: 10px 68px;
+  border-color: var(--dark-red);
+  border-radius: 10px;
+}
+button.darck-red-btn:hover {
+  background-color: var(--font-gold);
+  border-color: var(--font-gold);
+  transition: 1s;
+}
+.backphoto1 {
+  width: 1215px;
+  height: 750px;
+}
+
+/*2-d page*/
+.container-2 {
+  margin: 0 auto;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+}
+.page-2 {
+  padding-top: 75px;
+}
+.gold-line {
+  padding-top: 25px;
+
+  height: 3px;
+}
+.photos-row-1,
+.photos-row-2 {
+  display: flex;
+  flex-direction: row;
+}
+.photos-row-2 {
+  padding-bottom: 86px;
+}
+.photos {
+  color: var(--bg-dark);
+  display: flex;
+  flex-direction: column;
+  padding-right: 60px;
+}
+.photo-label {
+  width: 440px;
+  height: 285px;
+  padding: 75px 0 25px 0;
+}
+
+.gold-line-small {
+  width: 300px;
+  height: 2px;
+}
+
+.gold-line-small:hover {
+  width: 440px;
+  transition: 0.5s;
+}
+.bigger-tuor {
+  font-family: "Roboto";
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  padding: 10px 0;
+  margin: 0px;
+}
+.smaller-panorama {
+  font-family: "Roboto";
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0px;
+}
+/*3-d page*/
+.page-3 {
+  display: flex;
+  flex-direction: row;
+}
+.p-explore {
+  color: var(--ligth-wight);
+  padding-top: 64px;
+}
+.gold-line-3 {
+  width: 660px;
+  height: 3px;
+  padding: 25px 0 50px;
+}
+.text3 {
+  color: var(--ligth-wight);
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  width: 660px;
+  padding-top: 25px;
+  margin: 0;
+}
+.yellow-text {
+  color: var(--gold-text);
+}
+.quins-3-photo {
+  padding: 90px 0 75px 60px;
+  width: 720px;
+  height: 700px;
+}
+/*page-video*/
+.photo-for-video {
+  width: 1440px;
+  height: 714px;
+
+  position: absolute;
+  z-index: -1;
+}
+.page-video-text {
+  display: flex;
+  flex-direction: row;
+}
+.darck {
+  color: var(--bg-dark);
+  padding: 0 0 0 80px;
+}
+.player {
+  width: 1440px;
+  padding: 75px 0 40px;
+}
+/*page tickets*/
+.photo-tickets {
+  width: 720px;
+  height: 550px;
+  padding: 75px 0;
+}
+/*map and contackts*/
+.page-6 {
+  display: flex;
+  flex-direction: row;
+  padding: 75px 0;
+}
+.whole-adress {
+  padding-right: 198px;
+}
+.big-text {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  padding-bottom: 1px;
+  margin: 0;
+}
+
+.adress {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  text-decoration: none;
+  color: var(--bg-dark);
+  padding: 18px 0 0 0;
+  margin: 0;
+}
+.adress:first-child {
+  padding-top: 35px;
+}
+/*footer*/
+.footer {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.louvre-footer {
+  font-family: "Forum", cursive;
+  font-size: 28px;
+  line-height: 50px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--ligth-wight);
+  text-decoration: none;
+  margin: 0px 145px 0 20px;
+}
+.navigation-footer,
+.links-in-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.links-in-nav-1,
+.links-in-nav-2 {
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+}
+.social-links {
+  width: 24px;
+  height: 24px;
+  color: var(--ligth-wight);
+  padding-right: 24px;
+}
+.social-links:last-child {
+  padding-right: 0;
+}
+.social-links:hover {
+  color: var(--font-gold);
+}
+
+.links-in-nav-icons {
+  margin-left: 398px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+}
