@@ -50,7 +50,7 @@ h6 {
 footer {
   display: flex;
   background-color: rgb(227, 227, 236);
-  margin: 50px;
+  margin: 60px;
   padding: 20px;
 }
 .logo {
@@ -58,7 +58,7 @@ footer {
   margin-right: 20px;
 }
 .time {
-  margin: 16px 0px 16px 40px;
+  margin: 16px 0px 16px 60px;
   text-align: center;
   font-size: 24px;
 }
@@ -77,9 +77,9 @@ footer {
 /* contacts-section-link styles */
 
 .contacts-section-link {
+  color: orange;
   font-size: 15px;
   line-height: 24px;
-  color: aliceblue;
 }
 .orange-circle {
   color: orange;
@@ -101,6 +101,5 @@ footer {
   font-weight: 600;
 }
 .navigation {
-  color: #fff;
-  text-decoration: none;
+  color: aquamarine;
 }
