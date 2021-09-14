@@ -3,7 +3,12 @@ body {
 
   background-color: rgb(242, 248, 248);
 }
-
+.all-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(220, 234, 235);
+}
 /*main section*/
 
 h2,
@@ -17,7 +22,7 @@ h6 {
 .main-contener-section {
   display: flex;
   flex-direction: row-reverse;
-  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 6px 20px rgba(0, 0, 0, 0.1);
   padding: 20px 50px;
 }
 .main-section {
@@ -25,15 +30,17 @@ h6 {
   flex-direction: column;
   width: 1200px;
   background-color: #fff;
-  margin: 40px auto;
 }
 .about-me,
 .projects,
 .my-experience,
 .my-education {
   background-color: rgb(227, 227, 236);
-  margin: 50px;
+  margin: 25px 50px;
   padding: 20px;
+}
+.about-me:first-child {
+  margin-top: 50px;
 }
 .name {
   text-align: center;
@@ -50,8 +57,11 @@ h6 {
 footer {
   display: flex;
   background-color: rgb(227, 227, 236);
-  margin: 60px;
+  margin: 25px 50px;
   padding: 20px;
+}
+footer:last-child {
+  margin-bottom: 50px;
 }
 .logo {
   width: 120px;
@@ -60,7 +70,10 @@ footer {
 .time {
   margin: 16px 0px 16px 60px;
   text-align: center;
-  font-size: 24px;
+  font-size: 32px;
+  color: aquamarine;
+  -webkit-text-stroke: 1px black;
+  font-weight: bold;
 }
 /* bar section properties */
 .bar-section {
@@ -70,8 +83,8 @@ footer {
   color: #fff;
 }
 .photo {
-  width: 370px;
-  height: 350px;
+  max-width: 370px;
+  max-height: 350px;
 }
 
 /* contacts-section-link styles */
