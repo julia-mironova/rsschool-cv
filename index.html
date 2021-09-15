@@ -23,23 +23,16 @@
   <body>
     <div class="all-page">
       <!--main contener section-->
-      <main class="main-contener-section">
+      <main class="main-contener-section mobile-element">
         <!--main section-->
         <div class="main-section">
           <!--about me-->
-          <section class="about-me">
+          <section class="about-me mobile-reverse">
             <h2 class="name">Yuliya Mironava</h2>
-            <article>
+            <article id="About">
               <h3>Front-End Developer (beginner)</h3>
               <br />
 
-              <a
-                class="sites"
-                href="https://photos.app.goo.gl/teEz1NL8FhWVLdZh9"
-                ><span class="blue"><i>About me</i></span>
-                <i>(short video-resume)</i></a
-              ><br />
-              <br />
               I am beginner front-end developer from Belarus, which is living in
               Wroclaw now.<br />
               I'm searching for knowledge about how it works, how I can make
@@ -47,17 +40,24 @@
               <b>RS school course Stage#0</b> (online). Also I made a small
               project for <b><i>Fundacia WiWa</i></b> (children with cancer,
               just mobile version and Figma maket for all devices).<br />
-              The main benefits for me: <br />
-              *find an interesting job for all my live<br />
-              * have enought money to buy own car<br />
-              * make social web sites about insults, homless, animals,
-              children...<br />
-              <mark>What's why I am very motivated person:)!</mark>
+              <p>
+                <b>The main benefits for me:</b> <br />
+                *find an interesting job for all my live<br />
+                * have enought money to buy own car<br />
+                * make social web sites about insults, homless, animals,
+                children...<br />
+                <mark>What's why I am very motivated person:)!</mark><br />
+              </p>
+              <p>
+                <b>Also I know very important things:</b> <br />
+                * if need, I will do everything to find solution<br />
+                * understend words: fast, today, important
+              </p>
             </article>
           </section>
 
           <!--main contener section-->
-          <section class="projects">
+          <section class="projects mobile-reverse" id="Projects">
             <h2>Projects</h2>
 
             <ol>
@@ -65,10 +65,10 @@
                 <a
                   class="sites"
                   href="https://stupefied-jepsen-ef824c.netlify.app/"
-                  ><span class="blue"><i>Fundacia WiWa</i></span> (just for
+                  ><span class="blue"><i>Fundacia WiWa__</i></span> (just for
                   phones now)</a
                 >
-                <span>______________</span>
+
                 <span
                   >[2021, Html+Css] (Place, where parents can find halp for
                   their children)</span
@@ -76,9 +76,9 @@
               </li>
               <li>
                 <a class="sites" href="https://epic-neumann-488e7a.netlify.app/"
-                  ><span class="blue"><i>About Belarus factories</i></span></a
+                  ><span class="blue"><i>About Belarus factories__</i></span></a
                 >
-                <span>____________________________</span>
+
                 <span
                   >[2021, Html+Css+JS] (Small presentattion for Polish
                   lesson)</span
@@ -88,9 +88,9 @@
                 <a
                   class="sites"
                   href="https://docs.google.com/document/d/1ltDt4A2elUo_fjzFngR_MhR5NSB8pqwX7owuUz22PGg/edit"
-                  ><i>About insults</i></a
+                  ><i>About insults__</i></a
                 >
-                <span>______________________________________</span>
+
                 <span
                   >[2023, I'm still learn] (Social site for live after
                   insult)</span
@@ -120,7 +120,7 @@ console.log(`${result}`);
           </section>
 
           <!--my exxperience-->
-          <section class="my-experience">
+          <section class="my-experience mobile-reverse">
             <h3>My experience</h3>
 
             <h4>February 2021 starting live in Poland.</h4>
@@ -161,7 +161,7 @@ console.log(`${result}`);
           </section>
 
           <!--my education-->
-          <section class="my-education">
+          <section class="my-education mobile-reverse" id="Myeducation">
             <h3>My education</h3>
             <p>Belorussian National Technology University, Minsk</p>
             <ol>
@@ -177,7 +177,7 @@ console.log(`${result}`);
             </ol>
           </section>
           <!--footer-->
-          <footer>
+          <footer class="column">
             <img
               class="logo"
               src="https://rs.school/images/rs_school_js.svg"
@@ -205,14 +205,33 @@ console.log(`${result}`);
 
         <!--bar section-->
         <aside class="bar-section">
+          <div class="menu">
+            <!--<p>Menu</p>
+            <nav>
+              <a class="navigation position" href="#links"><i>there</i> </a>
+            </nav>-->
+            <div class="burger-menu navigation position">
+              <input id="menu-toggle" type="checkbox" />
+              <label class="menu-btn" for="menu-toggle">
+                <span></span>
+              </label>
+
+              <ul class="menubox">
+                <li><a class="menu-item" href="#About">About</a></li>
+                <li><a class="menu-item" href="#Projects">Projects</a></li>
+                <li>
+                  <a class="menu-item" href="#Myeducation">My education</a>
+                </li>
+                <li><a class="menu-item" href="#Contacts">Contacts</a></li>
+              </ul>
+            </div>
+          </div>
           <img class="photo" src="img/juli-to-resume-ok.jpg" alt="photo Juli" />
 
           <!--contacts section-->
-          <section class="contacts-section">
+
+          <section class="contacts-section" id="Contacts">
             <h5>Contacts</h5>
-            <nav>
-              <a class="navigation" href="#links"><i>there</i> </a>
-            </nav>
 
             <div>
               <ul class="contacts-section-link">
@@ -229,7 +248,7 @@ console.log(`${result}`);
                   >
                 </li>
                 <li>
-                  <span class="wight-color-text">Viber/ WhatsApp:</span>
+                  <span class="wight-color-text">Viber/ WhatsApp:</span><br />
                   <a class="navigation" href="tel:+375292694503"
                     >+375-29-269-45-03</a
                   >
@@ -281,6 +300,14 @@ console.log(`${result}`);
               </li>
             </ul>
           </section>
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/l86IU5pXoX0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </aside>
       </main>
     </div>
