@@ -238,4 +238,8 @@ footer:last-child {
     flex-direction: column;
     margin: 0;
   }
+  .small {
+    max-width: 280px;
+    padding: 0;
+  }
 }
