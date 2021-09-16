@@ -11,249 +11,305 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </head>
   <body>
-    <!--main contener section-->
-    <main class="main-contener-section">
-      <!--main section-->
-      <div class="main-section">
-        <!--about me-->
-        <section class="about-me">
-          <h2 class="name">Yuliya Mironava</h2>
-          <article>
-            <h3>Front-End Developer (beginner)</h3>
-            <br />
-
-            <a class="sites" href="https://photos.app.goo.gl/teEz1NL8FhWVLdZh9"
-              ><span class="blue"><i>About me</i></span>
-              <i>(short video-resume)</i></a
-            ><br />
-            <br />
-            I am beginner front-end developer from Belarus, which is living in
-            Wroclaw now.<br />
-            I'm searching for knowledge about how it works, how I can make
-            workable webpages by myself. I am already completed
-            <b>RS school course Stage#0</b> (online). Also I made a small
-            project for <b><i>Fundacia WiWa</i></b> (children with cancer, just
-            mobile version and Figma maket for all devices).<br />
-            The main benefits for me: <br />
-            *find an interesting job for all my live<br />
-            * have enought money to buy own car<br />
-            * make social web sites about insults, homless, animals,
-            children...<br />
-            <mark>What's why I am very motivated person:)!</mark>
-          </article>
-        </section>
-
-        <!--main contener section-->
-        <section class="projects">
-          <h2>Projects</h2>
-
-          <ol>
-            <li>
-              <a
-                class="sites"
-                href="https://stupefied-jepsen-ef824c.netlify.app/"
-                ><span class="blue"><i>Fundacia WiWa</i></span> (for phones,
-                just push the link)</a
-              >
-              <span>_____</span>
-              <span>[2021]</span>
-            </li>
-            <li>
-              <a class="sites" href="https://en.wikipedia.org/wiki/Old_age"
-                >About old people</a
-              >
-              <span>__________________________________</span>
-              <span>[2022]</span>
-            </li>
-            <li>
-              <a
-                class="sites"
-                href="https://docs.google.com/document/d/1ltDt4A2elUo_fjzFngR_MhR5NSB8pqwX7owuUz22PGg/edit"
-                ><span class="blue"><i>About insults</i></span></a
-              >
-              <span>______________________________________</span>
-              <span>[2023]</span>
-            </li>
-            <li>
-              <i>Code example:</i><br />
+    <div class="all-page">
+      <!--main contener section-->
+      <main class="main-contener-section mobile-element">
+        <!--main section-->
+        <div class="main-section">
+          <!--about me-->
+          <section class="about-me mobile-reverse">
+            <h2 class="name">Yuliya Mironava</h2>
+            <article id="About">
+              <h3>Front-End Developer (beginner)</h3>
               <br />
-              function <b><i>stringify(list)</i></b> { <br />
-              result = ""; <br />
-              result = JSON.stringify(new Node(list));<br />
-              let answer = result.replace(/[^+\d]/g, " ");<br />
-              answer = answer.replace(/\s{2,}/g, " "); <br />
-              answer = answer.substring(1);<br />
-              let answerOk = answer.replace(/\s{1,}/g, " -> ");<br />
-              answerOk = answerOk + "null";<br />
-              console.log(answerOk);<br />
-              return answerOk; <br />
-              }<br />
-              <i>(new Node(1, new Node(2, new Node(3))));</i><br />
-              console.log(`${result}`);<br />
-            </li>
-          </ol>
-        </section>
 
-        <!--my exxperience-->
-        <section class="my-experience">
-          <h3>My experience</h3>
+              I am beginner front-end developer from Belarus, which is living in
+              Wroclaw now.<br />
+              I'm searching for knowledge about how it works, how I can make
+              workable webpages by myself. I am already completed
+              <b>RS school course Stage#0</b> (online). Also I made a small
+              project for <b><i>Fundacia WiWa</i></b> (children with cancer,
+              just mobile version and Figma maket for all devices).<br />
+              <p>
+                <b>The main benefits for me:</b> <br />
+                *find an interesting job for all my live<br />
+                * have enought money to buy own car<br />
+                * make social web sites about insults, homless, animals,
+                children...<br />
+                <mark>What's why I am very motivated person:)!</mark><br />
+              </p>
+              <p>
+                <b>Also I know very important things:</b> <br />
+                * if need, I will do everything to find solution<br />
+                * understend words: fast, today, important
+              </p>
+            </article>
+          </section>
 
-          <h4>February 2021 starting live in Poland.</h4>
-          <p>
-            Mщмув with husband, 6 years child and cat. I'm learning polish, JS
-            and Git in the same time.
-          </p>
-          <ul>
-            <li>have to change profession to Frond-end developer</li>
-            <li>have to make ours live comfortable</li>
-            <li>have to find friends around</li>
-            <li>have to speak Polish language</li>
-          </ul>
+          <!--main contener section-->
+          <section class="projects mobile-reverse" id="Projects">
+            <h2>Projects</h2>
 
-          <h4>I worked in Gospromnadzor (before August 2020)</h4>
-          <p>
-            We halped factories to work safty for around and for people (with
-            boilers). Also we maked other important work:
-          </p>
-          <ul>
-            <li>changed oxygen stations at hospitals</li>
-            <li>
-              impruved cumbasters for making metal at "Minskaia bearing faktory"
-            </li>
-            <li>
-              made automation system for data collection on Microsoft excel
-            </li>
-          </ul>
-
-          <h4>SST Bartec (2012-2018)</h4>
-          <p>It was cool and great experience with clever teacher.</p>
-          <ul>
-            <li>learned how make a correct contrakt with customer</li>
-            <li>learned how works electrisity lines</li>
-            <li>made a projects in team about heating systems</li>
-          </ul>
-        </section>
-
-        <!--my education-->
-        <section class="my-education">
-          <h3>My education</h3>
-          <p>Belorussian National Technology University, Minsk</p>
-          <ol>
-            <li><b>RS school Stage#0</b> (2 mounth), 09-2021</li>
-            <li><b>GoIT courses</b> (2 weeks), 05-2021</li>
-            <li>Power supply engeneer, 2011</li>
-            <li>Master degree in power engenergetics, 2012</li>
-            <li>Logistick faculty (evening learning), 2011</li>
-            <li>
-              <b>English A2</b> (I have to learn it to get a master degree in
-              2011)
-            </li>
-          </ol>
-        </section>
-        <!--footer-->
-        <footer>
-          <img
-            class="logo"
-            src="https://rs.school/images/rs_school_js.svg"
-            alt="logo RS school"
-          />
-          <ul id="links">
-            <li>
-              <a class="sites" href="https://github.com/julia-mironova"
-                ><span class="blue"><i>Github link to julia-mironova</i></span>
-              </a>
-            </li>
-            <li>
-              <a class="sites" href="https://rs.school/js/"
-                ><span class="blue"
-                  ><i>Link to the course in RS school</i></span
-                >
-              </a>
-            </li>
-          </ul>
-          <time class="time" datetime="2021-07-20">10 September of 2021</time>
-        </footer>
-      </div>
-
-      <!--bar section-->
-      <aside class="bar-section">
-        <img class="photo" src="img/juli-to-resume-ok.jpg" alt="photo Juli" />
-
-        <!--contacts section-->
-        <section class="contacts-section">
-          <h5>Contacts</h5>
-          <nav>
-            <a class="navigation" href="#links"><i>there</i> </a>
-          </nav>
-
-          <div>
-            <ul class="contacts-section-link">
+            <ol class="small">
               <li>
-                <span class="wight-color-text">E:</span>
-                <a class="navigation" href="mailto:rabkevich15@gmail.com"
-                  >rabkevich15@gmail.com</a
+                <a
+                  class="sites"
+                  href="https://stupefied-jepsen-ef824c.netlify.app/"
+                  ><span class="blue"><i>Fundacia WiWa__</i></span> (just for
+                  phones now)</a
+                >
+
+                <span
+                  >[2021, Html+Css] (Place, where parents can find halp for
+                  their children)</span
                 >
               </li>
               <li>
-                <span class="wight-color-text">Tel:</span>
-                <a class="navigation" href="tel:+48515412099"
-                  >+48-515-412-099</a
+                <a class="sites" href="https://epic-neumann-488e7a.netlify.app/"
+                  ><span class="blue"><i>About Belarus factories__</i></span></a
+                >
+
+                <span
+                  >[2021, Html+Css+JS] (Small presentattion for Polish
+                  lesson)</span
                 >
               </li>
               <li>
-                <span class="wight-color-text">Viber/ WhatsApp:</span>
-                <a class="navigation" href="tel:+375292694503"
-                  >+375-29-269-45-03</a
+                <a
+                  class="sites"
+                  href="https://docs.google.com/document/d/1ltDt4A2elUo_fjzFngR_MhR5NSB8pqwX7owuUz22PGg/edit"
+                  ><i>About insults__</i></a
+                >
+
+                <span
+                  >[2023, I'm still learn] (Social site for live after
+                  insult)</span
+                >
+              </li>
+              <br />
+              <li>
+                <i>Code example:</i><br />
+
+                <pre><code class="language-js small">
+function stringify(list) {
+  result = "";
+  result = JSON.stringify(new Node(list));
+  let answer = result.replace(/[^+\d]/g, " ");
+  answer = answer.replace(/\s{2,}/g, " ");
+  answer = answer.substring(1);
+  let answerOk = answer.replace(/\s{1,}/g, " -> ");
+  answerOk = answerOk + "null";
+  console.log(answerOk);
+  return answerOk;
+}
+new Node(1, new Node(2, new Node(3)));
+console.log(`${result}`);
+</code></pre>
+              </li>
+            </ol>
+          </section>
+
+          <!--my exxperience-->
+          <section class="my-experience mobile-reverse">
+            <h3>My experience</h3>
+
+            <h4>February 2021 starting live in Poland.</h4>
+            <p>
+              We moved with husband, 6 years child and cat. I'm learning polish,
+              JS and Git in the same time.
+            </p>
+            <ul>
+              <li>have to change profession to Frond-end developer</li>
+              <li>have to make ours live comfortable</li>
+              <li>have to find friends around</li>
+              <li>have to speak Polish language</li>
+            </ul>
+
+            <h4>I worked in Gospromnadzor (before August 2020)</h4>
+            <p>
+              We halped factories to work safty for around and for people (with
+              boilers). Also we maked other important work:
+            </p>
+            <ul>
+              <li>changed oxygen stations at hospitals</li>
+              <li>
+                impruved cumbasters for making metal at "Minskaia bearing
+                faktory"
+              </li>
+              <li>
+                made automation system for data collection on Microsoft excel
+              </li>
+            </ul>
+
+            <h4>SST Bartec (2012-2018)</h4>
+            <p>It was cool and great experience with clever teacher.</p>
+            <ul>
+              <li>learned how make a correct contrakt with customer</li>
+              <li>learned how works electrisity lines</li>
+              <li>made a projects in team about heating systems</li>
+            </ul>
+          </section>
+
+          <!--my education-->
+          <section class="my-education mobile-reverse" id="Myeducation">
+            <h3>My education</h3>
+            <p>Belorussian National Technology University, Minsk</p>
+            <ol>
+              <li><b>RS school Stage#0</b> (2 mounth), 09-2021</li>
+              <li><b>GoIT courses</b> (2 weeks), 05-2021</li>
+              <li>Power supply engeneer, 2011</li>
+              <li>Master degree in power engenergetics, 2012</li>
+              <li>Logistick faculty (evening learning), 2011</li>
+              <li>
+                <b>English A2</b> (I have to learn it to get a master degree in
+                2011)
+              </li>
+            </ol>
+          </section>
+          <!--footer-->
+          <footer class="column">
+            <img
+              class="logo"
+              src="https://rs.school/images/rs_school_js.svg"
+              alt="logo RS school"
+            />
+            <ul id="links">
+              <li>
+                <a class="sites" href="https://github.com/julia-mironova"
+                  ><span class="blue"
+                    ><i>Github link to julia-mironova</i></span
+                  >
+                </a>
+              </li>
+              <li>
+                <a class="sites" href="https://rs.school/js/"
+                  ><span class="blue"
+                    ><i>Link to the course in RS school</i></span
+                  >
+                </a>
+              </li>
+            </ul>
+            <time class="time" datetime="2021-07-20"> September 2021</time>
+          </footer>
+        </div>
+
+        <!--bar section-->
+        <aside class="bar-section">
+          <div class="menu">
+            <!--<p>Menu</p>
+            <nav>
+              <a class="navigation position" href="#links"><i>there</i> </a>
+            </nav>-->
+            <div class="burger-menu navigation position">
+              <input id="menu-toggle" type="checkbox" />
+              <label class="menu-btn" for="menu-toggle">
+                <span></span>
+              </label>
+
+              <ul class="menubox">
+                <li><a class="menu-item" href="#About">About</a></li>
+                <li><a class="menu-item" href="#Projects">Projects</a></li>
+                <li>
+                  <a class="menu-item" href="#Myeducation">My education</a>
+                </li>
+                <li><a class="menu-item" href="#Contacts">Contacts</a></li>
+              </ul>
+            </div>
+          </div>
+          <img class="photo" src="img/juli-to-resume-ok.jpg" alt="photo Juli" />
+
+          <!--contacts section-->
+
+          <section class="contacts-section" id="Contacts">
+            <h5>Contacts</h5>
+
+            <div>
+              <ul class="contacts-section-link">
+                <li>
+                  <span class="wight-color-text">E:</span>
+                  <a class="navigation" href="mailto:rabkevich15@gmail.com"
+                    >rabkevich15@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <span class="wight-color-text">Tel:</span>
+                  <a class="navigation" href="tel:+48515412099"
+                    >+48-515-412-099</a
+                  >
+                </li>
+                <li>
+                  <span class="wight-color-text">Viber/ WhatsApp:</span><br />
+                  <a class="navigation" href="tel:+375292694503"
+                    >+375-29-269-45-03</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!--tex-soft scils-->
+          <section class="tex-soft-scils">
+            <h6>Soft skills</h6>
+            <ul>
+              <li class="orange-circle">
+                <span class="wight-color-text"> nice </span>
+              </li>
+              <li class="orange-circle">
+                <span class="wight-color-text">clever</span>
+              </li>
+              <li class="orange-circle">
+                <span class="wight-color-text">tolerant</span>
+              </li>
+              <li class="orange-circle">
+                <span class="wight-color-text">brave</span>
+              </li>
+            </ul>
+          </section>
+
+          <!--my-waitings-->
+          <section class="my-waitings">
+            <h6>My waitings</h6>
+            <ul>
+              <li class="orange-circle">
+                <span class="wight-color-text"> interesting tasks </span>
+              </li>
+              <li class="orange-circle">
+                <span class="wight-color-text">knowledge</span>
+              </li>
+              <li class="orange-circle">
+                <span class="wight-color-text"
+                  >understanding how it's work</span
+                >
+              </li>
+              <li class="orange-circle">
+                <span class="wight-color-text">cool teacher</span>
+              </li>
+              <li class="orange-circle">
+                <span class="wight-color-text"
+                  >salary after 12 mounth hard learning</span
                 >
               </li>
             </ul>
-          </div>
-        </section>
-        <!--tex-soft scils-->
-        <section class="tex-soft-scils">
-          <h6>Soft skills</h6>
-          <ul>
-            <li class="orange-circle">
-              <span class="wight-color-text"> nice </span>
-            </li>
-            <li class="orange-circle">
-              <span class="wight-color-text">clever</span>
-            </li>
-            <li class="orange-circle">
-              <span class="wight-color-text">tolerant</span>
-            </li>
-            <li class="orange-circle">
-              <span class="wight-color-text">brave</span>
-            </li>
-          </ul>
-        </section>
-
-        <!--my-waitings-->
-        <section class="my-waitings">
-          <h6>My waitings</h6>
-          <ul>
-            <li class="orange-circle">
-              <span class="wight-color-text"> interesting tasks </span>
-            </li>
-            <li class="orange-circle">
-              <span class="wight-color-text">knowledge</span>
-            </li>
-            <li class="orange-circle">
-              <span class="wight-color-text">understanding how it's work</span>
-            </li>
-            <li class="orange-circle">
-              <span class="wight-color-text">cool teacher</span>
-            </li>
-            <li class="orange-circle">
-              <span class="wight-color-text"
-                >salary after 12 mounth hard learning</span
-              >
-            </li>
-          </ul>
-        </section>
-      </aside>
-    </main>
+          </section>
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/l86IU5pXoX0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </aside>
+      </main>
+    </div>
   </body>
 </html>
