@@ -84,6 +84,12 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
+.wrapper {
+  width: 1440px;
+}
+.logo {
+  margin-right: 145px;
+}
 .navigation {
   display: flex;
   flex-direction: row;
@@ -92,12 +98,11 @@ ul {
 .louvre {
   font-family: "Forum", cursive;
   font-size: 28px;
-  line-height: 50px;
+
   letter-spacing: 5px;
   text-transform: uppercase;
   color: var(--ligth-wight);
   text-decoration: none;
-  margin: 0px 525px 0 20px;
 }
 .links-in-nav {
   font-family: "Roboto";
@@ -109,6 +114,10 @@ ul {
   text-decoration: none;
   margin-right: 76px;
 }
+.gold:hover {
+  color: var(--font-gold);
+}
+
 .links-in-nav-btn {
   font-family: "Roboto";
   font-weight: 200;
@@ -122,12 +131,18 @@ ul {
 .links-in-nav:last-child {
   margin-right: 0;
 }
+
 /*main page*/
 
 .dark-section {
   background-color: var(--bg-dark);
   margin: 0;
+  z-index: -1;
 }
+.padding_first {
+  padding-bottom: 62px;
+}
+
 .video-section {
   padding: 90px 0 75px 0;
 }
@@ -136,18 +151,41 @@ ul {
 .container-1 {
   margin: 0 auto;
   display: flex;
+  height: 750px;
   max-width: 1440px;
+  background-image: url(/museum/assets/mona-slider.jpg);
+  background-repeat: no-repeat;
+  background-position: calc(35% + 300px);
+  justify-content: space-between;
 }
-.container-photo {
+.blur {
+  backdrop-filter: blur(25px);
+  width: 35%;
+}
+.slider {
+  padding-top: 690px;
+}
+
+.right-part > div {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+/*.container-photo {
   margin: 0 auto;
   display: flex;
   max-width: 1920px;
 }
+.backphoto1 {
+  width: 1000px;
+  height: 750px;
+}*/
 .page-1 {
   width: 750px;
   height: 390px;
   padding-top: 115px;
-  position: absolute;
 }
 
 .darck-red-btn {
@@ -160,10 +198,6 @@ button.darck-red-btn:hover {
   background-color: var(--font-gold);
   border-color: var(--font-gold);
   transition: 1s;
-}
-.backphoto1 {
-  width: 1215px;
-  height: 750px;
 }
 
 /*2-d page*/
