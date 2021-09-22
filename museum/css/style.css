@@ -153,7 +153,7 @@ ul {
   display: flex;
   height: 750px;
   max-width: 1440px;
-  background-image: url(/museum/assets/mona-slider.jpg);
+  background-image: url(/assets/mona-slider.jpg);
   background-repeat: no-repeat;
   background-position: calc(35% + 300px);
   justify-content: space-between;
@@ -164,6 +164,10 @@ ul {
 }
 .slider {
   padding-top: 690px;
+}
+.base-slider {
+  height: 120px;
+  width: 600px;
 }
 
 .right-part > div {
@@ -291,6 +295,7 @@ button.darck-red-btn:hover {
   width: 720px;
   height: 700px;
 }
+
 /*page-video*/
 .photo-for-video {
   width: 1440px;
@@ -302,6 +307,8 @@ button.darck-red-btn:hover {
 .page-video-text {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 35px;
 }
 .darck {
   color: var(--bg-dark);
@@ -311,6 +318,45 @@ button.darck-red-btn:hover {
   width: 1440px;
   padding: 75px 0 40px;
 }
+.player-big {
+  height: 735px;
+  width: 1440px;
+  margin: 40px 0;
+}
+.video-small {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.player-small {
+  height: 254px;
+  width: 452px;
+}
+
+/*page galery*/
+.page-gallery {
+  margin: 0;
+}
+.picture-container {
+  overflow-y: hidden;
+  max-height: 1950px;
+  padding-top: 50px;
+}
+
+.picture-inner-container {
+  max-height: 2950px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 24px 36px;
+}
+.picture-gallery {
+  width: 456px;
+  max-height: 570px;
+  column-gap: 36px;
+}
+
 /*page tickets*/
 .photo-tickets {
   width: 720px;
