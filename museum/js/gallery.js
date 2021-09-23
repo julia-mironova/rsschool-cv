@@ -1,11 +1,3 @@
-function shuffle(array) {
-  array.sort(() => Math.random() - 0.5);
-}
-
-const pictureInnerContainer = document.querySelector(
-  ".picture-inner-container"
-);
-
 const galleryImgArr = [
   "/assets/img/Gallery/galery1.jpg",
   "/assets/img/Gallery/galery2.jpg",
@@ -23,11 +15,23 @@ const galleryImgArr = [
   "/assets/img/Gallery/galery14.jpg",
   "/assets/img/Gallery/galery15.jpg",
 ];
-shuffle(galleryImgArr);
-galleryImgArr.forEach((el) => {
-  const img = document.createElement("img");
-  img.classList.add("picture-gallery");
-  img.src = el;
-  img.alt = `gallery`;
-  pictureInnerContainer.append(img);
-});
+function shuffle(array) {
+  array.sort(() => Math.random() - 0.4);
+  return array;
+}
+
+const pictureInnerContainer = document.querySelector(
+  ".picture-inner-container"
+);
+
+function toArrgallery(galleryImgArr) {
+  let imgArr = shuffle(galleryImgArr);
+  for (let i = 0; i < galleryImgArr.length; i++) {
+    const img = document.createElement("img");
+    img.classList.add("picture-gallery");
+    img.src = imgArr[i];
+    img.alt = `galery`;
+    pictureInnerContainer.append(img);
+  }
+}
+toArrgallery(galleryImgArr);
