@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>museum</title>
+    <title>Museum</title>
 
     <link rel="stylesheet" href="css/normalize.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -13,7 +13,7 @@
       href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
       rel="stylesheet"
     />
-    <!--<link rel="icon" href="assets/favicon.ico" />-->
+    <link rel="icon" href="assets/favicon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
@@ -27,53 +27,60 @@
   </head>
   <body>
     <header id="welcome" class="dark-section">
-      <nav class="navigation">
-        <div class="header-container">
-          <div class="">
-            <a href="" class="logo-link">
-              <img src="assets/svg/Vector.png" alt="logo Luwre" />
-            </a>
-            <a href="#louvre" class="louvre">Louvre</a>
+      <div class="header-container wrapper">
+          <div class="logo">
+            <a href="" class="louvre">
+              <img
+                class="louvre gold"
+                src="assets/svg/Vector.png"
+                alt="logo Luwre"
+              />
+              </a>
+            <a href="#louvre" class="louvre gold">Louvre</a>
           </div>
-          <ul class="links-in-nav">
-            <li class="links-in-nav">
-              <a class="links-in-nav" href="#visiting">Visiting</a>
-            </li>
-            <li class="links-in-nav">
-              <a href="#explore" class="links-in-nav">Explore</a>
-            </li>
-            <li class="links-in-nav">
-              <a href="#video" class="links-in-nav">Video</a>
-            </li>
-            <li class="links-in-nav">
-              <a href="#tikets" class="links-in-nav">Tickets</a>
-            </li>
-            <li class="links-in-nav">
-              <a href="#contacts" class="links-in-nav">Contacts</a>
-            </li>
-          </ul>
+          <nav class="navigation">
+              <ul class="links-in-nav">
+                <li class="links-in-nav">
+                  <a class="links-in-nav gold" href="#visiting">Visiting</a>
+                </li>
+                <li class="links-in-nav">
+                  <a href="#explore" class="links-in-nav gold">Explore</a>
+                </li>
+                <li class="links-in-nav">
+                  <a href="#video" class="links-in-nav gold">Video</a>
+                </li>
+                <li class="links-in-nav">
+                  <a href="#gallery" class="links-in-nav gold">Gallery</a>
+                </li>
+                <li class="links-in-nav">
+                  <a href="#tikets" class="links-in-nav gold">Tickets</a>
+                </li>
+                <li class="links-in-nav">
+                  <a href="#contacts" class="links-in-nav gold">Contacts</a>
+                </li>
+              </ul>
+        
+          </nav>
         </div>
-      </nav>
     </header>
     <main class="all">
-      <section class="section dark-section">
+      <section class="dark-section padding_first">
         <div class="container-1">
+            <div class="blur">
           <div class="page-1">
             <h2>
               Welcome<br />
               to the Louvre
             </h2>
             <h1>From the castle to the museum</h1>
-            <button href="#btn-louvre" class="darck-red-btn links-in-nav-btn">
-              Discover the Louvre
-            </button>
+            <a class="darck-red-btn links-in-nav-btn" href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736">Discover the Louvre</a>
+          </div>
+          </div>
+           <div class="slider">
+              <img class="base-slider" src="assets/img/welcome-container.png" alt="slider">
           </div>
         </div>
-        <img
-          class="backphoto1 container-photo"
-          src="assets/img/background-1st-page.jpg"
-          alt="louvre-pict"
-        />
+             
       </section>
       <section id="btn-louvre" class="section page-2">
         <div id="visiting" class="container-2">
@@ -87,7 +94,7 @@
             <div class="photos">
               <img
                 class="photo-label"
-                src="assets/img/Museum/royal-palace.jpg"
+                src="/assets/img/Museum/royal-palace.jpg"
                 alt="royal palace"
               />
               <h3>Royal Palace</h3>
@@ -102,7 +109,7 @@
             <div class="photos">
               <img
                 class="photo-label"
-                src="assets/img/Museum/demond-wibg.jpg"
+                src="/assets/img/Museum/demond-wibg.jpg"
                 alt="demond wibg"
               />
               <h3>Denon Wing</h3>
@@ -117,7 +124,7 @@
             <div class="photos">
               <img
                 class="photo-label"
-                src="assets/img/Museum/colonnade-perrault.jpg"
+                src="/assets/img/Museum/colonnade-perrault.jpg"
                 alt="colonnade perrault"
               />
               <h3>Colonnade Perrault</h3>
@@ -134,7 +141,7 @@
             <div class="photos">
               <img
                 class="photo-label"
-                src="assets/img/Museum/greek-hall.jpg"
+                src="/assets/img/Museum/greek-hall.jpg"
                 alt="greek hall"
               />
               <h3>Greek hall</h3>
@@ -149,7 +156,7 @@
             <div class="photos">
               <img
                 class="photo-label"
-                src="assets/img/Museum/mona-liza.jpg"
+                src="/assets/img/Museum/mona-liza.jpg"
                 alt="mona liza"
               />
               <h3>Mona Lisa</h3>
@@ -164,7 +171,7 @@
             <div class="photos">
               <img
                 class="photo-label"
-                src="assets/img/Museum/night-palace.jpg"
+                src="/assets/img/Museum/night-palace.jpg"
                 alt="night palace"
               />
               <h3>Night Palace</h3>
@@ -203,27 +210,19 @@
                 been damaged in any way, but because it looked different.
               </p>
             </div>
+            <div class="_3rd-page">
             <img
               class="quins-3-photo"
-              src="assets/img/3rd-page.jpg"
-              alt="quins and dogs"
+              src="/assets/img/3rd.jpg"
+              alt="quins and dogs grey"
             />
+            
+            </div>
           </div>
         </div>
       </section>
       <section class="section video-section">
         <div id="video" class="container-2">
-          <img
-            class="photo-for-video"
-            src="assets/img/video.jpg"
-            alt="video-in-future"
-          />
-          <video
-            class="player"
-            src="assets/video/video.mp4"
-            poster="assets/video/poster.jpg"
-            controls
-          ></video>
           <div class="page-video-text">
             <h2 class="yellow-text">Video journey</h2>
             <p class="text3 darck">
@@ -231,24 +230,94 @@
               enjoy masterpieces such as Mona Lisa or Hammurabi's Code
             </p>
           </div>
+          <div class="video-big">
+            <img class="player-big" src="/assets/img/Video/video-main.jpg" alt="player">
+          </div>
+          <div class="video-small">
+            <img class="player-small" src="/assets/img/Video/poster3.jpg" alt="player">
+            <img class="player-small" src="/assets/img/Video/poster1.jpg" alt="player">
+            <img class="player-small" src="/assets/img/Video/poster2.jpg" alt="player">
+          </div>
         </div>
       </section>
       <section class="section dark-section">
-        <div id="tikets" class="container-2">
-          <h2 class="p-explore">Buy tickets</h2>
+       <div class="container-2">
+          <div id="gallery" class="page-gallery">
+            <div class="container">
+              <h2 class="p-explore">Art galery</h2> 
+             </div>
+          </div>
+          <div class="picture-container">
+           <div class="blur-bottom">
+          <div class="picture-inner-container">
+                
+          </div>
+          </div>
+          </div>
+          </div>
+        
+      </section>
+      <section class="section">
+        <div id="tikets" class="container-2 tickets">
+          <h2 class="yellow-text">Buy tickets</h2>
           <img
             class="gold-line"
             src="assets/img/gold-line.png"
             alt="gold-line"
           />
-
+<div class="tickets-photo-buying">
           <img
             class="photo-tickets"
             src="assets/img/buy-tickets.jpg"
             alt="for
           tickets photo"
           />
-        </div>
+          <div class="radio-btn">
+                <p class="big-text">Ticket Type</p>
+                <label class="adress">
+                <input type="radio" checked="checked" name="radio">
+                <span class="circlemark"></span> Permanent exhibition
+              </label>
+              <label class="adress age">
+                <input type="radio" name="radio">
+                <span class="circlemark"></span> Temporary exhibition
+              </label>
+              <label class="adress">
+                <input type="radio" name="radio">
+                <span class="circlemark"></span>Combined Admission
+              </label>
+            </div>
+                          
+            <div class="amount">
+                <p class="big-text">Amount</p>
+                <p class="adress age">Basic 18+</p>
+                <div class="amount-input">                
+                    <button class="center" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                    <input type="number" min="0" max="20" value="1" readonly class="centre">
+                    <button class="center" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                </div>
+
+                <p class="adress age">Senior 65+</p>
+                <div class="amount-input">
+                    <button type="button" class="center" onclick="this.nextElementSibling.stepDown()">-</button>
+                    <input type="number" min="0" max="20" value="1" readonly class="centre">
+                    <button type="button" class="center" onclick="this.previousElementSibling.stepUp()">+</button>
+                </div>
+
+                <p class="big-text padTxt">Total €220</p>
+                
+                <input type="button" value="Buy Now" class="buy txt-buy">
+            </div>              
+          </div>
+          </div>
+          <div class="parallax">
+            <img
+            class="parallax-all"
+            src="/assets/img/Museum/parallax1.png"
+            alt="parallax"
+          />
+          </div>
+        
       </section>
       <section class="section page-2">
         <div class="container-2">
@@ -283,55 +352,90 @@
           </div>
         </div>
       </section>
-    </main>
-    <footer class="header-container dark-section">
-      <nav class="footer">
-        <div class="">
-          <a href="" class="logo-link">
-            <img src="assets/svg/Vector.png" alt="logo Luwre" />
-          </a>
-          <a href="#louvre" class="louvre-footer">Louvre</a>
-        </div>
-        <div class="links-in-nav">
-          <div class="links-in-nav-1">
-            <a href="#welcome" class="links-in-nav">Welcome</a>
-            <a href="#visiting" class="links-in-nav">Visiting</a>
-            <a href="#explore" class="links-in-nav">Explore</a>
+       <footer class="container-f dark-section">
+         <div class="end">
+      <div class="wrapper foot">
+        <div class="logo row">
+            <a href="" class="louvre">
+              <img
+                class="louvre gold"
+                src="assets/svg/Vector.png"
+                alt="logo Luwre"
+              />
+              <!--логотип вверху переделать чтоб изменялся-->
+            </a>
+            <a href="#louvre" class="louvre gold">Louvre</a>
           </div>
-          <div class="links-in-nav-2">
-            <a href="#video" class="links-in-nav">Video</a>
-            <a href="#tikets" class="links-in-nav">Tickets</a>
-            <a href="#contacts" class="links-in-nav">Contacts</a>
-          </div>
-          <ul class="links-in-nav-icons">
-            <li class="social-links">
-              <a href="" class="social-links">
-                <i class="fab fa-youtube social-links"></i>
-              </a>
+          <nav class="navigation-footer">
+          <ul class="column">
+            
+            <li class="column">
+              <a class="links-in-nav gold" href="#visiting">Visiting</a>
             </li>
-            <li class="social-links">
-              <a href="" class="social-links"
-                ><i class="fab fa-instagram social-links"></i
-              ></a>
+            <li class="column">
+              <a href="#explore" class="links-in-nav gold">Explore</a>
             </li>
-            <li class="social-links">
-              <a href="" class="social-links">
-                <i class="fab fa-facebook-f social-links"></i
-              ></a>
+            <li class="column">
+              <a href="#video" class="links-in-nav gold">Video</a>
             </li>
-            <li class="social-links">
-              <a href="" class="social-links"
-                ><i class="fab fa-twitter social-links"></i
-              ></a>
+                    
+            <li class="column">
+              <a href="#gallery" class="links-in-nav gold">Gallery</a>
             </li>
-            <li class="social-links">
-              <a href="" class="social-links"
-                ><i class="fab fa-pinterest social-links"></i
-              ></a>
+            <li class="column">
+              <a href="#tikets" class="links-in-nav gold">Tickets</a>
             </li>
+            <li class="column">
+              <a href="#contacts" class="links-in-nav gold">Contacts</a>
+            </li>
+            
           </ul>
-        </div>
+        
       </nav>
-    </footer>
+            <div class="social">
+                
+                <div class="social__links">
+                    <a class="social__site" href=""><img src="assets/svg/youtube.svg" alt="youtube"></a>
+                </div>
+                <div class="social__links">
+                    <a class="social__site" href=""><img src="assets/svg/instagram.svg" alt="instagram"></a>
+                </div>
+                <div class="social__links">
+                    <a class="social__site" href=""><img src="assets/svg/facebook.svg" alt="facebook"></a>
+                </div>
+                <div class="social__links">
+                    <a class="social__site" href=""><img src="assets/svg/twitter.svg" alt="twitter"></a>
+                </div>
+                <div class="social__links">
+                    <a class="social__site" href=""><img src="assets/svg/pinter.svg" alt="pinterest"></a>
+                </div>
+            </div>
+            </div>
+            <img class="finish" src="/assets/img/gold-line.png" alt="cherta">
+            <div class="wrapper foot">
+              
+              
+            
+              <a class="sites" href="https://rs.school/js/"
+                ><span class="links-in-nav"
+                  >@ 2021</span
+                >
+              </a>
+              
+            
+              <a class="sites" href="https://rs.school/js/"
+                ><span class="links-in-nav"
+                  >The Rolling Scopes School</span
+                >
+              </a>
+              <a class="sites" href="https://github.com/julia-mironova"
+                ><span class="links-in-nav">Julia-mironova</span>
+              </a>
+            </div>
+        </div>
+        </footer>
+    </main>
+       
+       <script src="/js/gallery.js"></script>
   </body>
 </html>
