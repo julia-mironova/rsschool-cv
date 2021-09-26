@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+}
+
+h1,
+p {
+  color: bisque;
+  letter-spacing: 0.02em;
+  padding: 0px 5px 10px 0px;
+}
+
+p {
+  font-size: 22px;
+}
+.main-container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left-part {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.7s ease-in-out;
+}
+.left-part > div {
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: top;
+}
+h1:first-child {
+  padding-top: 200px;
+}
+.right-part {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform 0.7s ease-in-out;
+}
+
+.right-part > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+.main-container .btn-container .up-down-container button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  background-color: rgb(207, 84, 36);
+  border: coral;
+}
+
+.down-btn {
+  transform: translateX(-100%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.up-btn {
+  transform: translateY(-100%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.main-container .btn-container .left-right-container button {
+  position: absolute;
+  left: 35%;
+  top: 80%;
+  background-color: rgb(36, 153, 207);
+  border: rgb(27, 27, 44);
+}
+.left-btn {
+  transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.right-btn {
+  transform: translateY(100%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+button {
+  font-size: 18px;
+  padding: 15px;
+  z-index: 5;
+  cursor: pointer;
+}
+.main-container .btn-container .left-right-container button:hover {
+  background-color: rgb(126, 118, 124);
+}
+.main-container .btn-container .up-down-container button:hover {
+  background-color: rgb(126, 118, 124);
+}
