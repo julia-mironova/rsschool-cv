@@ -201,11 +201,11 @@ ul {
 
 .darck-red-btn {
   background: var(--dark-red);
-  padding: 10px 68px;
+  padding: 25px 65px;
   border-color: var(--dark-red);
   border-radius: 10px;
 }
-button.darck-red-btn:hover {
+.darck-red-btn:hover {
   background-color: var(--font-gold);
   border-color: var(--font-gold);
   transition: 1s;
@@ -432,11 +432,13 @@ input[type="radio"]:checked:after {
   margin-top: 5px;
   margin-left: 25px;
 }
+
 .centre {
   border: 0px;
   text-align: center;
   float: left;
 }
+
 .age {
   text-align: start;
 }
@@ -514,8 +516,8 @@ input[type="radio"]:checked:after {
   align-items: center;
 }
 .column {
-  display: flex;
   flex-direction: column;
+  column-count: 2;
 }
 .louvre-footer {
   font-family: "Forum", cursive;
@@ -632,4 +634,9 @@ input[type="radio"]:checked:after {
 }
 .links-in-nav:hover {
   color: var(--font-gold);
+}
+.navigation-footer{
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 150px;
 }

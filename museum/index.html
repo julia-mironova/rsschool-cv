@@ -13,7 +13,7 @@
       href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
       rel="stylesheet"
     />
-    <!--<link rel="icon" href="assets/favicon.ico" />-->
+    <link rel="icon" href="assets/favicon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
@@ -35,33 +35,33 @@
                 src="assets/svg/Vector.png"
                 alt="logo Luwre"
               />
-              <!--логотип вверху переделать чтоб изменялся-->
-            </a>
+              </a>
             <a href="#louvre" class="louvre gold">Louvre</a>
           </div>
           <nav class="navigation">
-          <ul class="links-in-nav">
-            <li class="links-in-nav">
-              <a class="links-in-nav gold" href="#visiting">Visiting</a>
-            </li>
-            <li class="links-in-nav">
-              <a href="#explore" class="links-in-nav gold">Explore</a>
-            </li>
-            <li class="links-in-nav">
-              <a href="#video" class="links-in-nav gold">Video</a>
-            </li>
-            <li class="links-in-nav">
-              <a href="#gallery" class="links-in-nav gold">Gallery</a>
-            </li>
-            <li class="links-in-nav">
-              <a href="#tikets" class="links-in-nav gold">Tickets</a>
-            </li>
-            <li class="links-in-nav">
-              <a href="#contacts gold" class="links-in-nav gold">Contacts</a>
-            </li>
-          </ul>
+              <ul class="links-in-nav">
+                <li class="links-in-nav">
+                  <a class="links-in-nav gold" href="#visiting">Visiting</a>
+                </li>
+                <li class="links-in-nav">
+                  <a href="#explore" class="links-in-nav gold">Explore</a>
+                </li>
+                <li class="links-in-nav">
+                  <a href="#video" class="links-in-nav gold">Video</a>
+                </li>
+                <li class="links-in-nav">
+                  <a href="#gallery" class="links-in-nav gold">Gallery</a>
+                </li>
+                <li class="links-in-nav">
+                  <a href="#tikets" class="links-in-nav gold">Tickets</a>
+                </li>
+                <li class="links-in-nav">
+                  <a href="#contacts" class="links-in-nav gold">Contacts</a>
+                </li>
+              </ul>
+        
+          </nav>
         </div>
-      </nav>
     </header>
     <main class="all">
       <section class="dark-section padding_first">
@@ -73,9 +73,7 @@
               to the Louvre
             </h2>
             <h1>From the castle to the museum</h1>
-            <button href="#btn-louvre" class="darck-red-btn links-in-nav-btn">
-              Discover the Louvre
-            </button>
+            <a class="darck-red-btn links-in-nav-btn" href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736">Discover the Louvre</a>
           </div>
           </div>
            <div class="slider">
@@ -240,6 +238,7 @@
             <img class="player-small" src="/assets/img/Video/poster1.jpg" alt="player">
             <img class="player-small" src="/assets/img/Video/poster2.jpg" alt="player">
           </div>
+        </div>
       </section>
       <section class="section dark-section">
        <div class="container-2">
@@ -248,18 +247,15 @@
               <h2 class="p-explore">Art galery</h2> 
              </div>
           </div>
-          
           <div class="picture-container">
            <div class="blur-bottom">
           <div class="picture-inner-container">
-           
-          
+                
           </div>
           </div>
           </div>
           </div>
-        </div>
-
+        
       </section>
       <section class="section">
         <div id="tikets" class="container-2 tickets">
@@ -305,7 +301,7 @@
                 <div class="amount-input">
                     <button type="button" class="center" onclick="this.nextElementSibling.stepDown()">-</button>
                     <input type="number" min="0" max="20" value="1" readonly class="centre">
-                    <button type="button" class="center"onclick="this.previousElementSibling.stepUp()">+</button>
+                    <button type="button" class="center" onclick="this.previousElementSibling.stepUp()">+</button>
                 </div>
 
                 <p class="big-text padTxt">Total €220</p>
@@ -370,10 +366,9 @@
             </a>
             <a href="#louvre" class="louvre gold">Louvre</a>
           </div>
-          <nav class="navigation ">
+          <nav class="navigation-footer">
           <ul class="column">
-            <div class="links-in-nav-1">
-            <div class="links-in-nav-2">
+            
             <li class="column">
               <a class="links-in-nav gold" href="#visiting">Visiting</a>
             </li>
@@ -383,9 +378,7 @@
             <li class="column">
               <a href="#video" class="links-in-nav gold">Video</a>
             </li>
-            </div>
-<div class="links-in-nav-2">
-            
+                    
             <li class="column">
               <a href="#gallery" class="links-in-nav gold">Gallery</a>
             </li>
@@ -393,10 +386,9 @@
               <a href="#tikets" class="links-in-nav gold">Tickets</a>
             </li>
             <li class="column">
-              <a href="#contacts gold" class="links-in-nav gold">Contacts</a>
+              <a href="#contacts" class="links-in-nav gold">Contacts</a>
             </li>
-            </div>
-            </div>
+            
           </ul>
         
       </nav>
@@ -441,13 +433,8 @@
               </a>
             </div>
         </div>
-    </div>
-</div>
-
-
-    </footer>
-
-    
+        </footer>
+    </main>
        
        <script src="/js/gallery.js"></script>
   </body>
