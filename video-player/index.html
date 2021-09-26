@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>museum player</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      rel="stylesheet"
+    />
+    <!--<link rel="icon" href="assets/favicon.ico" />-->
+
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+</html>
+<body>
+  <section class="video-section">
+    <div id="video" class="container-2">
+      <div class="with-img">
+        <button
+          class="player-play-big"
+          style="background-image: url('img/video.jpg')"
+        >
+          <img src="img/Museum/big-play.png" alt="big play btn" />
+        </button>
+        <video src="video/cat-frog.mp4" class="video"></video>
+      </div>
+    
+      <div class="player" style="background-image: url('img/Museum/player-back.png')" >    
+    <button class="player-play-5s" data-skip="-5">
+      <img src="img/Museum/back-5sec.png" alt="-5s" />
+    </button>
+    <button class="player-play-normal">
+      <img src="img/Museum/play.png" alt="normal play" class="toPause" />
+    </button>
+    <button class="player-next-5s" data-skip="+5">
+      <img src="img/Museum/next-5sec.png" alt="+5s" />
+    </button>
+    <div class="player-play-video">
+      <input
+        type="range"
+        class="progress-video"
+        id="progress-video"
+        min="0"
+        max="100"
+        value="0"
+        step="2"
+      />
+    </div>
+    <button class="player-sound">
+      <img src="img/Museum/sound.png" alt="sound" class="noSound" />
+    </button>
+    <div class="player-play-sound">
+      <input
+        type="range"
+        class="progress-sound"
+        id="volume"
+        name="volume"
+        min="0"
+        max="1"
+        value="0.6"
+        step="0.1"
+      />
+    </div>
+    <button class="screen-full">
+      <img src="img/Museum/screen.png" alt="full-screen" class="screenBig" />
+    </button>
+    </div>
+  </section>
+
+  <script src="player.js"></script>
+</body>
