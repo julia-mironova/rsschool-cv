@@ -1,0 +1,76 @@
+@charset "UTF-8";
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 2.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 38px;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-family: "Forum";
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Forum", cursive;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h4 {
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+}
+
+h5 {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+  /* Убираем маркеры */
+  text-decoration: none;
+}
+
+ul {
+  margin-left: 0;
+  /* Отступ слева в браузере IE и Opera */
+  padding-left: 0;
+  /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1440px;
+}
+
+/*# sourceMappingURL=style.css.map */
