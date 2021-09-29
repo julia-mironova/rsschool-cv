@@ -1,0 +1,14 @@
+{
+  "name": "museum",
+  "version": "1.0.0",
+  "description": "project on scss",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/style.scss css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.42.1"
+  }
+}

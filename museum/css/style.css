@@ -7,16 +7,13 @@
   --font2: 32px;
   --gold-text: #caaa7d;
 }
-@media (max-width: 1950px) {
-  :root {
-    --font1: 50px;
-    --font2: 28px;
-  }
-}
+
 @font-face {
   font-family: "Roboto", sans-serif;
   src: url("assets/fonts/RobotoThin.ttf");
-  font-weight: 200;
+  src: local("Roboto");
+  font-weight: 400;
+  font-style: normal ;
 }
 
 h1 {
@@ -54,11 +51,13 @@ h3 {
 }
 
 html {
+  font-size: 10px;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Roboto";
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
   margin: 0px;
 }
 li {
@@ -606,6 +605,10 @@ input[type="radio"]:checked:after {
   filter: invert(52%) sepia(27%) saturate(431%) hue-rotate(356deg)
     brightness(85%) contrast(87%);
 }
+.louvre__svg:hover{
+  filter: invert(52%) sepia(27%) saturate(431%)
+    brightness(85%) contrast(87%);
+}
 
 .social__site {
   display: block;
@@ -639,4 +642,19 @@ input[type="radio"]:checked:after {
   display: flex;
   flex-wrap: wrap;
   max-height: 150px;
+}
+/*SVG style*/
+.louvre__svgfoot {
+  background-image: url(../assets/svg/Vector-louvre.svg);
+  width: 49px;
+  height: 26px;
+  margin: 0 26px 8px 0;
+  display: inline-block;
+}
+
+@media (max-width: 1950px) {
+  :root {
+    --font1: 50px;
+    --font2: 28px;
+  }
 }
