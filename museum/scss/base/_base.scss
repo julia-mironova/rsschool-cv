@@ -15,6 +15,7 @@ h1 {
     font-size: 28px;
     line-height: 33px;
     letter-spacing: 2px;
+    color: $color-font-light;
    // color: $color-font-light;
   }
   
@@ -38,14 +39,7 @@ h1 {
     text-transform: uppercase;
     margin: 0;
   }
-  
-  h4 {
-  font-weight: 200;
-  font-size: 22px;
-  line-height: 26px;
-  letter-spacing: 2px;
-  }
-  
+    
   h5 {
   font-weight: 300;
   font-size: 22px;
@@ -53,17 +47,60 @@ h1 {
   margin: 0;
   }
 
-  li {
-    list-style-type: none; /* Убираем маркеры */
-    text-decoration: none;
-  }
-  ul {
+    ul {
+    display: flex;
     margin-left: 0; /* Отступ слева в браузере IE и Opera */
     padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
   }
 
-  a {
+  li {
+    list-style-type: none; /* Убираем маркеры */
     text-decoration: none;
+    padding-right: 55px;
+ }
+
+ li:last-child {
+  padding-right: 0;
+ }
+
+
+ //fonts in document
+ //fonts-header
+  .text_white_gold {
+    text-decoration: none;
+    color: $color-font-light;
   }
 
+  .text_white_gold:hover {
+    color: $color-font-gold-hover;
+    letter-spacing: 3px;
+    transition: 1.5s;
+  }
   
+.louvre {
+  font-family: "Forum";
+  font-size: 28px;
+  line-height: 31px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+//fonts Welcome
+.light-text {
+  color: $color-font-light;
+}
+
+//svg
+.louvre__svg {
+  background-image: url(../assets/svg/Vector-louvre.svg);
+  width: 49px;
+  height: 26px;
+  margin: 8px 26px 0 0;
+  display: inline-block;
+} 
+.louvre__svg:hover{
+  filter: invert(52%) sepia(27%) saturate(431%)
+    brightness(85%) contrast(87%);
+    transition: 1.5s;
+}
+

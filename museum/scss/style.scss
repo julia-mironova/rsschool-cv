@@ -1,5 +1,23 @@
 
 @import "abstract/_constants.scss";
+
+//Fonts and colors of them
 @import "base/_base.scss";
+
+//Width of monitors
 @import "layouts/_wrapper.scss";
+
+//Styles of view
+@import "components/_dark.scss";
+
+//buttons
+@import "base/_buttons.scss";
+
+//Sections
+@import "layouts/_header.scss";
+@import "layouts/_footer.scss";
+@import "layouts/_welcom.scss";
+
+
+
 

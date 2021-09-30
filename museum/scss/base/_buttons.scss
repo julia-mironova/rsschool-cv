@@ -1,0 +1,25 @@
+.button_welcome{
+    background-color:$color-dark-red;
+    border-color: $color-dark-red;
+    padding: 20px 30px;
+    border-radius: 10px;
+    max-width: 365px;
+    max-height: 75px;
+    margin-top: 70px;
+}
+
+.button_welcome:hover {
+    background-color: $color-font-gold-hover; 
+    border-color: $color-font-gold-hover;
+    transition: 1.5s;
+}
+
+.button_text_light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: $color-font-light;
+    padding: 0px 35px;
+}

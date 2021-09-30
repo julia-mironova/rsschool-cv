@@ -1,0 +1,16 @@
+.welcom_part{
+    position: absolute;
+    margin-top: 150px;
+    z-index: 10;
+}
+
+.welcom_pictures {
+max-width: 1000px;
+height: 750px;
+margin-left: 30%;
+overflow: hidden;
+}
+
+.welcom_pictures_photos {
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
+}
