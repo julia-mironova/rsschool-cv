@@ -13,8 +13,8 @@ body {
 
 h1 {
   font-weight: 300;
-  font-size: 28px;
-  line-height: 33px;
+  font-size: 2.8rem;
+  line-height: 3.3rem;
   letter-spacing: 2px;
   color: #ffffff;
 }
@@ -22,8 +22,8 @@ h1 {
 h2 {
   font-family: "Forum";
   font-weight: normal;
-  font-size: 80px;
-  line-height: 90px;
+  font-size: 8rem;
+  line-height: 9rem;
   letter-spacing: 5px;
   text-transform: uppercase;
   margin: 0;
@@ -32,8 +32,8 @@ h2 {
 h3 {
   font-family: "Forum", cursive;
   font-weight: normal;
-  font-size: 32px;
-  line-height: 35px;
+  font-size: 3.2rem;
+  line-height: 3.5rem;
   letter-spacing: 5px;
   text-transform: uppercase;
   margin: 0;
@@ -41,8 +41,8 @@ h3 {
 
 h5 {
   font-weight: 300;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
   margin: 0;
 }
 
@@ -78,14 +78,36 @@ li:last-child {
 
 .louvre {
   font-family: "Forum";
-  font-size: 28px;
-  line-height: 31px;
+  font-size: 2.8rem;
+  line-height: 3.1rem;
   letter-spacing: 5px;
   text-transform: uppercase;
 }
 
 .light-text {
   color: #ffffff;
+}
+
+.gold-text {
+  color: #9D8665;
+}
+
+a {
+  text-decoration: none;
+  color: #030303;
+}
+
+.bigger-tuor {
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  padding: 10px 0;
+  margin: 0px;
+}
+
+.smaller-panorama {
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  margin: 0px;
 }
 
 .louvre__svg {
@@ -118,18 +140,18 @@ li:last-child {
   max-width: 365px;
   max-height: 75px;
   margin-top: 70px;
+  transition: all 1.5s;
 }
 
 .button_welcome:hover {
   background-color: #9D8665;
   border-color: #9D8665;
-  transition: 1.5s;
 }
 
 .button_text_light {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  line-height: 26px;
+  line-height: 2.6rem;
   letter-spacing: 2px;
   text-decoration: none;
   color: #ffffff;
@@ -207,6 +229,13 @@ li:last-child {
 
 .social__links:hover {
   filter: invert(52%) sepia(27%) saturate(431%) hue-rotate(356deg) brightness(85%) contrast(87%);
+  transform: 0.5s;
+}
+
+.social__site {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*
@@ -270,6 +299,7 @@ li:last-child {
   width: 600px;
   height: 120px;
   padding: 0 75px;
+  cursor: pointer;
 }
 
 .slider_dots {
@@ -286,6 +316,7 @@ li:last-child {
 
 .slider_item:hover {
   background-color: #D2B183;
+  transition: 0.5s;
 }
 
 .slider_btn {
@@ -299,6 +330,55 @@ li:last-child {
 
 .arrow_l-r:hover {
   color: #D2B183;
+  transition: 0.5s;
+}
+
+.wrapper__virtual {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 75px auto;
+}
+
+.photos-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box {
+  display: block;
+  height: 285px;
+  margin: 75px 0 25px 0;
+}
+
+.text_virtual {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.photo-click {
+  max-height: 424px;
+}
+
+.one_photo {
+  max-width: 440px;
+  max-height: 515px;
+}
+
+.gold-line-grown {
+  content: "";
+  max-width: 300px;
+  margin: 10px 0;
+  height: 2px;
+}
+
+.gold-line-grown:hover {
+  max-width: 440px;
+  color: #7E6C51;
+  transition: all 1s;
 }
 
 /*# sourceMappingURL=style.css.map */

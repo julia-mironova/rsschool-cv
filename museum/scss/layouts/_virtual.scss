@@ -1,0 +1,53 @@
+.virtual {
+    
+}
+
+.wrapper__virtual {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 75px auto;
+    
+}
+
+.photos-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    display: block;
+    height: 285px;
+    margin: 75px 0 25px 0;
+   
+}
+
+.text_virtual {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.photo-click {
+    max-height: 424px;
+}
+
+.one_photo {
+    max-width: 440px;
+    max-height: 515px;
+}
+
+.gold-line-grown {
+    content: "";
+    max-width: 300px;
+    margin: 10px 0;
+    height: 2px;
+}
+
+.gold-line-grown:hover {
+   max-width: 440px;
+   color: $color-font-gold-active;
+   transition: all 1s;
+}

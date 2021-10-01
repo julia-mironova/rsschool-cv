@@ -6,18 +6,18 @@
     max-width: 365px;
     max-height: 75px;
     margin-top: 70px;
+    transition: all 1.5s;
 }
 
 .button_welcome:hover {
     background-color: $color-font-gold-hover; 
     border-color: $color-font-gold-hover;
-    transition: 1.5s;
-}
+}  
 
 .button_text_light {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    line-height: 26px;
+    line-height: 2.6rem;
     letter-spacing: 2px;
     text-decoration: none;
     color: $color-font-light;

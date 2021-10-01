@@ -52,8 +52,14 @@
 .social__links:hover {
   filter: invert(52%) sepia(27%) saturate(431%) hue-rotate(356deg)
     brightness(85%) contrast(87%);
+    transform: 0.5s;
 }
 
+.social__site {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /*
 
 
