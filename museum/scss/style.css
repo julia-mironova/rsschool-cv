@@ -228,14 +228,77 @@ li:last-child {
 }
 
 .welcom_pictures {
+  position: relative;
   max-width: 1000px;
   height: 750px;
+  padding-bottom: 60px;
   margin-left: 30%;
   overflow: hidden;
 }
 
+.welcom_photos_padding {
+  padding-bottom: 60px;
+}
+
 .welcom_pictures_photos {
-  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: blue;
+  width: 20%;
+  height: 850px;
+  /*z-index: 5;
+  top: 0;
+  left: 0;
+  height: 810px;
+  width: 1000px;
+  content: "";
+  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);*/
+}
+
+.slider {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 50;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  background-color: #030303;
+  width: 600px;
+  height: 120px;
+  padding: 0 75px;
+}
+
+.slider_dots {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider_item {
+  background-color: #ffffff;
+  height: 16px;
+  width: 16px;
+}
+
+.slider_item:hover {
+  background-color: #D2B183;
+}
+
+.slider_btn {
+  display: flex;
+}
+
+.arrow_l-r {
+  color: #ffffff;
+  width: 30px;
+}
+
+.arrow_l-r:hover {
+  color: #D2B183;
 }
 
 /*# sourceMappingURL=style.css.map */
