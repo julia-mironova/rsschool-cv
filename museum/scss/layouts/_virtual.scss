@@ -46,8 +46,10 @@
     height: 2px;
 }
 
-.gold-line-grown:hover {
-   max-width: 440px;
+.text_virtual:hover {
    color: $color-font-gold-active;
-   transition: all 1s;
+   cursor: pointer;
+   .gold-line-grown{
+    max-width: 440px;
+}
 }

@@ -1,0 +1,9 @@
+@mixin font($weight, $size, $height, $spacing, $margin, $transform:uppercase){
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    letter-spacing: $spacing;
+    text-transform: $transform;
+    margin: $margin;
+}
+

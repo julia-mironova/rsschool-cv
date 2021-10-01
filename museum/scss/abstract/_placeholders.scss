@@ -1,0 +1,13 @@
+%transition {
+    transition: all 1s ease-out;
+}
+
+.text_virtual:hover {
+    .gold-line-grown {
+    @extend %transition;
+    }
+}
+
+%font-h {
+    font-family: "Forum", cursive;
+}

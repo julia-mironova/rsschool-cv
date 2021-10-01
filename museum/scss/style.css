@@ -1,4 +1,12 @@
 @charset "UTF-8";
+.text_virtual:hover .gold-line-grown {
+  transition: all 1s ease-out;
+}
+
+h3, h2 {
+  font-family: "Forum", cursive;
+}
+
 html {
   font-size: 10px;
   scroll-behavior: smooth;
@@ -20,7 +28,6 @@ h1 {
 }
 
 h2 {
-  font-family: "Forum";
   font-weight: normal;
   font-size: 8rem;
   line-height: 9rem;
@@ -30,7 +37,6 @@ h2 {
 }
 
 h3 {
-  font-family: "Forum", cursive;
   font-weight: normal;
   font-size: 3.2rem;
   line-height: 3.5rem;
@@ -263,32 +269,35 @@ a {
 
 .welcom_pictures {
   position: relative;
+  z-index: 1;
   max-width: 1000px;
   height: 750px;
   padding-bottom: 60px;
   margin-left: 30%;
   overflow: hidden;
 }
-
-.welcom_photos_padding {
-  padding-bottom: 60px;
-}
-
 .welcom_pictures_photos {
   position: absolute;
   z-index: 2;
-  top: 0;
-  left: 0;
+  content: "";
   background-color: blue;
   width: 20%;
-  height: 850px;
-  /*z-index: 5;
-  top: 0;
-  left: 0;
-  height: 810px;
-  width: 1000px;
-  content: "";
-  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);*/
+}
+
+/*.welcom_pictures_photos {
+   position: absolute; 
+   content: "";
+   background-color: blue;
+   width: 20%;
+
+   top: 0;
+   left: 0;
+   height: 810px;
+   width: 1000px;
+
+   background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);}*/
+.welcom_photos_padding {
+  padding-bottom: 60px;
 }
 
 .slider {
@@ -318,7 +327,6 @@ a {
   height: 16px;
   width: 16px;
 }
-
 .slider_item:hover {
   background-color: #D2B183;
   transition: 0.5s;
@@ -332,7 +340,6 @@ a {
   color: #ffffff;
   width: 30px;
 }
-
 .arrow_l-r:hover {
   color: #D2B183;
   transition: 0.5s;
@@ -383,10 +390,12 @@ a {
   height: 2px;
 }
 
-.gold-line-grown:hover {
-  max-width: 440px;
+.text_virtual:hover {
   color: #7E6C51;
-  transition: all 1s;
+  cursor: pointer;
+}
+.text_virtual:hover .gold-line-grown {
+  max-width: 440px;
 }
 
 /*# sourceMappingURL=style.css.map */
