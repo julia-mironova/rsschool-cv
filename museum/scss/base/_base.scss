@@ -49,15 +49,15 @@ h1 {
 
     ul {
     display: flex;
-    margin-left: 0; /* Отступ слева в браузере IE и Opera */
-    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+    justify-content: space-between;
+    width: 775px;
+    padding-left: 0;
   }
 
   li {
     list-style-type: none; /* Убираем маркеры */
     text-decoration: none;
-    padding-right: 55px;
- }
+    }
 
  li:last-child {
   padding-right: 0;

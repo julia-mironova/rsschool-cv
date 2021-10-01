@@ -48,17 +48,15 @@ h5 {
 
 ul {
   display: flex;
-  margin-left: 0;
-  /* Отступ слева в браузере IE и Opera */
+  justify-content: space-between;
+  width: 775px;
   padding-left: 0;
-  /* Отступ слева в браузере Firefox, Safari, Chrome */
 }
 
 li {
   list-style-type: none;
   /* Убираем маркеры */
   text-decoration: none;
-  padding-right: 55px;
 }
 
 li:last-child {
@@ -170,12 +168,15 @@ a {
 
 .navigation {
   display: flex;
+  justify-content: space-between;
+  width: 775px;
+  align-items: center;
 }
 
 .navigation__link {
   font-weight: 200;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
   letter-spacing: 2px;
 }
 
@@ -250,6 +251,10 @@ a {
 
 
 */
+.welcom {
+  display: flex;
+}
+
 .welcom_part {
   position: absolute;
   margin-top: 150px;
@@ -333,6 +338,10 @@ a {
   transition: 0.5s;
 }
 
+.virtual {
+  display: flex;
+}
+
 .wrapper__virtual {
   display: flex;
   justify-content: space-between;
@@ -365,7 +374,6 @@ a {
 
 .one_photo {
   max-width: 440px;
-  max-height: 515px;
 }
 
 .gold-line-grown {

@@ -12,11 +12,14 @@
 
 .navigation {
     display: flex;
+    justify-content: space-between;
+    width: 775px;
+    align-items: center;
 }
 
 .navigation__link {
     font-weight: 200;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
     letter-spacing: 2px;
 }
