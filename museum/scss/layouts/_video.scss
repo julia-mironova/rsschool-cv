@@ -1,0 +1,32 @@
+.video {
+    @extend %section;
+   }
+ 
+ .wrapper__video {
+     @extend %wrapper_section;
+     margin: 75px auto;
+     .video_page {
+         @extend %element_row;
+         padding-top: 75px;
+     }
+     .page-video-text {
+        @extend %element_row;
+        padding-bottom: 50px;
+         p {
+             margin: 0;
+             max-width: 720px;
+         }
+     }
+     .video-small {
+        @extend %element_row; 
+        .player-small {
+            padding-right: 42px;
+            &:last-child{
+                padding-right: 0;
+            }
+         }
+     }
+     
+    }
+
+  

@@ -1,0 +1,28 @@
+.explore {
+    @extend %section;
+   }
+
+   .wrapper__explore {
+    @extend %wrapper_section;
+    margin: 75px auto;
+    .explore_page {
+        @extend %element_row;
+        padding-top: 75px;
+        .text3 {
+            font-family: "Roboto";
+                @include font(300, 2.2rem, 3.8rem,1px, 0, none);
+                color:$color-font-light;
+               max-width: 660px;
+               padding-top: 25px;
+        }
+        .yellow-text {
+            color: $color-font-gold-hover;
+        }
+        .gold-line-3 {
+            padding: 25px 0 50px 0;
+            max-width: 90%;
+            height: 3px;
+        }
+    }
+}
+

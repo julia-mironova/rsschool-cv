@@ -1,56 +1,45 @@
 .welcom {
     display: flex;
-}
-
-.welcom_part{
-    position: absolute;
-    margin-top: 150px;
-    z-index: 10;
-}
-
-.welcom_pictures {
-    position: relative;
-    z-index: 1;
-    max-width: 1000px;
-    height: 750px;
-    padding-bottom: 60px;
-    margin-left: 30%;
-    overflow: hidden;
-    &_photos {
-        position: absolute; 
-        z-index: 2;
-        content: "";
-        background-color: blue;
-        width: 20%;
+    &_part {
+        position: absolute;
+        margin-top: 150px;
+        z-index: 10;
     };
-    }
-
- /*.welcom_pictures_photos {
-    position: absolute; 
-    content: "";
-    background-color: blue;
-    width: 20%;
-   
-    top: 0;
-    left: 0;
-    height: 810px;
-    width: 1000px;
-    
-    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);}*/
+    &_pictures {
+        position: relative;
+        z-index: 1;
+        max-width: 1000px;
+        height: 750px;
+        padding-bottom: 60px;
+        margin-left: 30%;
+        overflow: hidden;
+        
+}
+}
+ /*.
+  
+        background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);}*/
 
 
 .welcom_photos_padding {
     padding-bottom: 60px;
+   
 }
 
+.welcom_pictures_photos {
+    position: absolute; 
+    z-index: 2;
+    content: "";
+    background-color: blue;
+    width: 20%;
+};
 
 
 //slider
 .slider {
     position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   @extend %element_row;
+   align-items: center;
     z-index: 50;
     bottom: 0; 
     right: 0;
@@ -60,24 +49,23 @@
     height: 120px;
     padding: 0 75px;
     cursor: pointer;
-        
-}
-
-.slider_dots {
-    width: 180px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.slider_item {
-    background-color: $color-font-light;
-    height: 16px;
-    width: 16px;
-    &:hover {
-        background-color:$color-photo-unviseted;   
-        transition: 0.5s;  
+    &_dots {
+        width: 180px;
+        display: flex;
+        justify-content: space-between;
     }
+    &_item {
+        background-color: $color-font-light;
+        height: 16px;
+        width: 16px;
+        &:hover {
+            background-color:$color-photo-unviseted;   
+            transition: 0.5s;  
+        }    
 }
+}
+
+
 
 .slider_btn {
 display: flex;

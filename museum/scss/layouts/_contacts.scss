@@ -1,0 +1,23 @@
+.contacts {
+   @extend %section;
+  }
+
+.wrapper__contacts {
+    @extend %wrapper_section;
+    margin: 75px auto;
+    .contacts_page {
+        @extend %element_row;
+        padding-top: 75px;
+    }
+    .big-text {
+        font-family: "Roboto";
+        @include font(500, 2.8rem, 3.3rem, 1px, 0, capitalize);
+        padding-bottom: 50px;
+        &:first-child {
+            padding-bottom: 0px;
+        }
+    }
+}
+
+
+   

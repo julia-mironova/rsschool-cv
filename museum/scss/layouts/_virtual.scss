@@ -1,13 +1,12 @@
 .virtual {
     display: flex;
+    margin: auto;
+    
 }
 
 .wrapper__virtual {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    @extend %wrapper_section;
     margin: 75px auto;
-    
 }
 
 .photos-row {

@@ -1,0 +1,36 @@
+.art-gellery {
+    @extend %section;
+    .page-gallery{
+        padding: 75px 0;
+    }
+   }
+
+   
+  .page-gallery {
+    margin: 0;
+  }
+  .picture-container {
+    overflow-y: hidden;
+    max-height: 1950px;
+    width: $content-width-desktop;
+}
+  
+  .picture-inner-container {
+    max-height: 2950px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 24px 36px;
+    }
+
+  .picture-gallery {
+    width: 456px;
+    max-height: 570px;
+    column-gap: 36px;
+   &:first-child{
+       padding-top: 30px;
+   }
+   &:nth-child(11n) {
+    padding-top: 30px;
+   }
+  }
