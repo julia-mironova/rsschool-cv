@@ -1,6 +1,6 @@
 .welcom {
     display: flex;
-    
+        
     &_part {
         position: absolute;
         margin-top: 150px;
@@ -48,6 +48,12 @@
             width: 20%;
          }*/
 }
+}
+
+.wrapper__welcom {
+          @include media-landskape {
+            padding: 0 20px;
+        }
 }
  /*.
   

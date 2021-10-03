@@ -5,9 +5,16 @@
 .wrapper__contacts {
     @extend %wrapper_section;
     margin: 75px auto;
+    @include media-landskape {
+        margin: 60px auto;
+        padding: 0 20px;
+    }
     .contacts_page {
         @extend %element_row;
         padding-top: 75px;
+        @include media-landskape {
+            padding-top: 60px;
+        }
     }
    
     .big-text {
@@ -25,8 +32,11 @@
             cursor: pointer;
         }
     }
-    
+    .map {
+        @include media-landskape {
+            max-width: 694px; 
+    }
 }
-
+}
 
    
