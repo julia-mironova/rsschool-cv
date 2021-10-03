@@ -26,6 +26,7 @@
         overflow: hidden;
         @include media-landskape {
            padding-top:0;
+           max-height: 550px;
         }
         @include media-portrete {
             margin-left:0;
@@ -38,14 +39,14 @@
          } 
         
         
-        &_photos {
+       /* &_photos {
             position: relative; 
             z-index:2;
            
             
             background-color: blue;
             width: 20%;
-         }
+         }*/
 }
 }
  /*.
@@ -55,8 +56,12 @@
 
 .welcom_photos_padding {
     padding-bottom: 60px;
-    max-width: 380px;
-    height: 285px;
+    @include media-landskape {
+        max-width: 700px;
+        max-height: 525px;
+        padding-bottom: 60px;
+     }
+   
 }
 
 

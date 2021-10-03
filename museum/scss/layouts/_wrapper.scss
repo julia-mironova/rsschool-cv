@@ -2,13 +2,14 @@
     max-width: $content-width-desktop;
     margin: auto;
     @include media-landskape {
-        padding: 0 20px;
+        max-width: $content-width-landskape;
+      
     }
     @include media-portrete {
-        padding: 0 20px;
+        max-width:$content-width-portrete;
     }
     @include media-phone {
-        padding: 0 20px;
+       max-width: $content-width-phone;
     }
 }
 

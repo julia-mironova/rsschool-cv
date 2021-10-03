@@ -5,15 +5,28 @@
    .wrapper__explore {
     @extend %wrapper_section;
     margin: 75px auto;
+    @include media-landskape {
+        margin: 60px auto;
+    }
     .explore_page {
         @extend %element_row;
         padding-top: 75px;
+        @include media-landskape {
+            display: flex;
+            flex-direction: column;
+            padding:0 20px;
+        }
         .text3 {
             font-family: "Roboto";
                 @include font(300, 2.2rem, 3.8rem,1px, 0, none);
                 color:$color-font-light;
                max-width: 660px;
                padding-top: 25px;
+               @include media-landskape {
+                max-width: ($content-width-landskape)-40px;
+                @include font(300, 2.0rem, 3.8rem,1px, 0, none);
+                padding-top: 0;
+            }
         }
         .yellow-text {
             color: $color-font-gold-hover;
@@ -22,6 +35,9 @@
             padding: 25px 0 50px 0;
             max-width: 90%;
             height: 3px;
+            @include media-landskape {
+                padding: 20px 0 60px 0;
+            }
         }
     }
 }
