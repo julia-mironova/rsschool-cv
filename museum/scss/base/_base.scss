@@ -17,11 +17,30 @@ h1 {
     letter-spacing: 2px;
     color: $color-font-light;
    // color: $color-font-light;
+   @include media-landskape {
+    @include font(200, 2.4rem, 2.8rem, 2px, 0, none);
+  }
+  @include media-phone {
+    @include font(200, 1.6rem, 1.9rem, 2px, 0, none);
+    padding-top:25px;
+  }
   }
   
   h2 {
     @extend %font-h;
     @include font(normal, 8rem, 9rem, 5px, 0);
+    @include media-landskape {
+      @include font(normal, 5rem, 9rem, 5px, 0);
+    }
+    @include media-landskape {
+      @include font(normal, 4rem, 6rem, 5px, 0);
+    }
+    @include media-phone {
+      @include font(normal, 2.8rem, 4.8rem, 5px, 0);
+    }
+    @include media-phone {
+      @include font(normal, 2.8rem, 4.0rem, 5px, 0)
+    }
   }
 
   h3 {
@@ -58,6 +77,9 @@ h1 {
   .text_white_gold {
     text-decoration: none;
     color: $color-font-light;
+    @include media-phone {
+      @include font(normal, 1.6rem, 3.5rem, 1px, 0);
+    }
   }
 
   .text_white_gold:hover {
@@ -72,6 +94,9 @@ h1 {
   line-height: 3.1rem;
   letter-spacing: 5px;
   text-transform: uppercase;
+  @include media-phone {
+    @include font(normal, 1.6rem, 1.8rem, 5px, 0)
+  }
 }
 
 //fonts Welcome
@@ -102,17 +127,5 @@ color: $color-bg-dark;
   margin: 0px;
  }
 
-//svg
-.louvre__svg {
-  background-image: url(../assets/svg/Vector-louvre.svg);
-  width: 49px;
-  height: 26px;
-  margin: 8px 26px 0 0;
-  display: inline-block;
-} 
-.louvre__svg:hover{
-  filter: invert(52%) sepia(27%) saturate(431%)
-    brightness(85%) contrast(87%);
-    transition: 1.5s;
-}
+
 

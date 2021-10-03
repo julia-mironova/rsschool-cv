@@ -4,6 +4,12 @@
     padding: 20px 30px;
     border-radius: 10px;
     max-width: 365px;
+    @include media-landskape {
+        max-width: 300px;
+      }
+      @include media-portrete {
+          display: none;
+      }
     max-height: 75px;
     margin-top: 70px;
     transition: all 1.5s;
@@ -22,4 +28,8 @@
     text-decoration: none;
     color: $color-font-light;
     padding: 0px 35px;
+    @include media-landskape {
+        line-height: 2.3rem;
+        padding: 0;
+      }
 }

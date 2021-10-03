@@ -7,6 +7,9 @@
 //Fonts and colors of them
 @import "base/_base.scss";
 
+//adaptive
+@import "base/_hamburger";
+
 //Width of monitors
 @import "layouts/_wrapper.scss";
 
@@ -25,6 +28,8 @@
 @import "layouts/_picture-explore.scss";
 @import "layouts/_art-gallery.scss";
 @import "layouts/_video.scss";
+
+
 
 
 

@@ -1,4 +1,14 @@
 .wrapper {
     max-width: $content-width-desktop;
     margin: auto;
+    @include media-landskape {
+        padding: 0 20px;
+    }
+    @include media-portrete {
+        padding: 0 20px;
+    }
+    @include media-phone {
+        padding: 0 20px;
+    }
 }
+

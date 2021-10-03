@@ -9,6 +9,7 @@
         @extend %element_row;
         padding-top: 75px;
     }
+   
     .big-text {
         font-family: "Roboto";
         @include font(500, 2.8rem, 3.3rem, 1px, 0, capitalize);
@@ -17,6 +18,14 @@
             padding-bottom: 0px;
         }
     }
+    h5 {
+        margin-bottom: 20px;
+        a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+    
 }
 
 
