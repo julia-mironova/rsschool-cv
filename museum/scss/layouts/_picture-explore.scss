@@ -1,7 +1,11 @@
 .explore {
     @extend %section;
    }
-
+   .third-page {
+    @include media-landskape {
+        margin: 60px auto 0;
+    }  
+   }
    .wrapper__explore {
     @extend %wrapper_section;
     margin: 75px auto;
@@ -26,19 +30,28 @@
                 max-width: ($content-width-landskape)-40px;
                 @include font(300, 2.0rem, 3.8rem,1px, 0, none);
                 padding-top: 0;
-            }
-        }
+            };
+            
         .yellow-text {
             color: $color-font-gold-hover;
         }
-        .gold-line-3 {
-            padding: 25px 0 50px 0;
-            max-width: 90%;
-            height: 3px;
-            @include media-landskape {
-                padding: 20px 0 60px 0;
-            }
-        }
+        
     }
 }
 
+   }
+
+   .last {
+    @include media-landskape {
+        display: none;
+}
+}
+
+.gold-line-3 {
+    padding: 25px 0 50px 0;
+    max-width: 90%;
+    height: 3px;
+    @include media-landskape {
+        max-width: 960px;
+    }
+}
