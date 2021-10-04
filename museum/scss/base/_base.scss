@@ -60,6 +60,10 @@ h1 {
     font-size: 2.0rem;
   line-height: 2.3rem;
   }
+  @include media-portrete {
+    font-size: 1.8rem;
+  line-height: 2.1rem;
+  }
   }
 
     ul {

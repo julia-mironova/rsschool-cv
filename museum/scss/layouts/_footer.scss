@@ -19,6 +19,13 @@
 
 }
 
+.footer-portrete {
+  display: flex;
+  @include media-portrete {
+    flex-direction: column;
+  }
+}
+
 .footer__nav {
   display: flex;
   flex-wrap: wrap;
@@ -33,14 +40,18 @@
 
 .footer__navigation {
   font-weight: 200;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
   letter-spacing: 2px;
   padding-bottom: 25px;
   margin-right: 150px;
   @include media-landskape {
     max-width: 130px;
     margin-right: 20px;
+  }
+  @include media-portrete {
+    font-size: 1.8rem;
+  line-height: 2.1rem;
   }
 }    
 
@@ -56,6 +67,10 @@
   @include media-landskape {
     padding-bottom: 10px;
   }
+  @include media-portrete {
+    padding-bottom: 0;
+   
+  }
   }
 
 .social__links {
@@ -68,6 +83,9 @@
   border-radius: 50px;
   display: flex;
   justify-content: space-around;
+  @include media-portrete {
+    margin: 0 24px 0 0;
+  }
   
 }
 

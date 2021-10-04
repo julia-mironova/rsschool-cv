@@ -9,11 +9,21 @@
         margin: 60px auto;
         padding: 0 20px;
     }
+    @include media-portrete {
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
     .contacts_page {
         @extend %element_row;
         padding-top: 75px;
         @include media-landskape {
             padding-top: 60px;
+        }
+        @include media-portrete {
+            padding-top: 40px;
+            display: inline-flex;
+            flex-direction: column;
         }
     }
    
@@ -24,6 +34,10 @@
         &:first-child {
             padding-bottom: 0px;
         }
+        @include media-portrete {
+            @include font(500, 2.0rem, 2.3rem, 1px, 0, capitalize); 
+            padding-bottom: 40px;
+        }
     }
     h5 {
         margin-bottom: 20px;
@@ -31,11 +45,17 @@
             text-decoration: underline;
             cursor: pointer;
         }
+        @include media-portrete {
+            margin-bottom: 15px;  
+        }
     }
     .map {
         @include media-landskape {
             max-width: 694px; 
     }
+    @include media-portrete {
+        max-width: 728px; 
+}
     
 }
 }
@@ -43,6 +63,9 @@
 .gold-line {
     @include media-landskape {
         max-width: ($content-width-landskape)-80px; 
+}
+@include media-portrete {
+    max-width: ($content-width-portrete)-40px; 
 }
 }
    

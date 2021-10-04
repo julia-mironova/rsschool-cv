@@ -3,10 +3,10 @@
     margin: auto;
     @include media-landskape {
         max-width: $content-width-landskape;
-      
-    }
+      }
     @include media-portrete {
         max-width:$content-width-portrete;
+        margin: 0;
     }
     @include media-phone {
        max-width: $content-width-phone;
