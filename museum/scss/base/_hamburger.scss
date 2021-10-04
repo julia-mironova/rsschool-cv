@@ -1,19 +1,24 @@
 %hamburger-line {
-    display: inline-block;
+    display: block;
     content: "";
     position: absolute;
     height: 2px;
     width: 100%;
-    background-color: $color-font-light;
+    background-color: $color-font-light;  
+    transition-duration: 0.25s;   
 }
-
-
+.hamburger__line {
+    @extend %hamburger-line;
+    top: calc(50% - 1px);
+    right: 0;
+    }
 .hamburger {
     display: inline-block;
     display: none;
+   
     @include media-landskape {
         display: inline-block;
-    }
+   }
     position: relative;
     width: 32px;
     height: 22px ;
@@ -29,8 +34,60 @@
     }
 }
 
-.hamburger__line {
-  @extend %hamburger-line;
-  top: calc(50% - 1px);
-  right: 0;
-}
+
+
+
+//try make menu
+
+ 
+  /*.menubox {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    z-index: 200;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: rgb(136, 141, 139);
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.25s;
+  }
+  
+  .navigation__link {
+    display: block;
+    padding: 12px 24px;
+    color: $color-font-light;
+    text-decoration: none;
+    transition-duration: 0.25s;
+  }
+  .navigation__link:hover {
+    background-color:$color-menu-choose;
+  }
+  */
+  #menu-toggle {
+    opacity: 0;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+
+  
+  /*#menu-toggle:checked ~ .hamburger__line > span {
+    transform: rotate(45deg);
+  }
+  #menu-toggle:checked ~ .hamburger__line > span::before {
+    transform: rotate(45deg);
+  }
+  #menu-toggle:checked ~ .hamburger__line > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu-toggle:checked ~ .menubox {
+    visibility: visible;
+    left: 0;
+  }*/
+  
+ 
