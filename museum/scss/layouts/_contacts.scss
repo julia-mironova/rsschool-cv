@@ -36,7 +36,13 @@
         @include media-landskape {
             max-width: 694px; 
     }
+    
 }
 }
 
+.gold-line {
+    @include media-landskape {
+        max-width: ($content-width-landskape)-80px; 
+}
+}
    

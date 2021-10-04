@@ -334,7 +334,9 @@ a {
 }
 @media (max-width: 1024px) {
   .header__wrapper {
+    margin: 0;
     padding: 0 20px;
+    max-width: 984px;
   }
 }
 
@@ -344,10 +346,10 @@ a {
   width: 775px;
   align-items: center;
 }
-
 @media (max-width: 1024px) {
   .navigation {
     display: none;
+    max-width: 350px;
   }
 }
 
@@ -396,6 +398,9 @@ a {
 @media (max-width: 1024px) {
   .footer__wrapper {
     padding: 0 20px 40px 20px;
+  }
+  .footer__wrapper:last-child {
+    padding: 0 20px 0 20px;
   }
 }
 
@@ -741,6 +746,12 @@ a {
 @media (max-width: 1024px) {
   .wrapper__contacts .map {
     max-width: 694px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .gold-line {
+    max-width: 944px;
   }
 }
 

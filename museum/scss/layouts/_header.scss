@@ -12,7 +12,9 @@
     align-items: center;
     justify-content: space-between;
     @include media-landskape {
-        padding: 0 20px;
+       margin: 0; 
+       padding: 0 20px;
+       max-width: ($content-width-landskape)-40px;
     }
 
 }
@@ -24,12 +26,11 @@
     justify-content: space-between;
     width: 775px;
     align-items: center;
-}
-
-.navigation {
     @include media-landskape {
         display: none;
+        max-width: 350px;
     }
+
 }
 
 .navigation__link {
