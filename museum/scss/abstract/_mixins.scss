@@ -1,0 +1,39 @@
+@mixin font($weight, $size, $height, $spacing, $margin, $transform:uppercase){
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    letter-spacing: $spacing;
+    text-transform: $transform;
+    margin: $margin;
+}
+
+@mixin media-desktope {
+    @media (max-width:$content-width-desktop) {
+        @content;
+    }
+}
+
+@mixin media-landskape {
+    @media (max-width:$content-width-landskape) {
+        @content;
+    }
+}
+
+@mixin media-portrete {
+    @media (max-width:$content-width-portrete) {
+        @content;
+    }
+}
+
+@mixin media-phone {
+    @media (max-width:$content-width-phone) {
+        @content;
+    }
+}
+
+@mixin media-min {
+    @media (max-width:$content-width-min) {
+        @content;
+    }
+}
+

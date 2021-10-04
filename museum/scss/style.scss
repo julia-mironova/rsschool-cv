@@ -1,0 +1,36 @@
+
+@import "abstract/_constants.scss";
+@import "abstract/_mixins.scss";
+@import "abstract/_placeholders.scss";
+
+
+//Fonts and colors of them
+@import "base/_base.scss";
+
+//adaptive
+@import "base/_hamburger";
+
+//Width of monitors
+@import "layouts/_wrapper.scss";
+
+//Styles of view
+@import "components/_dark.scss";
+
+//buttons
+@import "base/_buttons.scss";
+
+//Sections
+@import "layouts/_header.scss";
+@import "layouts/_footer.scss";
+@import "layouts/_welcom.scss";
+@import "layouts/_virtual.scss";
+@import "layouts/_contacts.scss";
+@import "layouts/_picture-explore.scss";
+@import "layouts/_art-gallery.scss";
+@import "layouts/_video.scss";
+
+
+
+
+
+

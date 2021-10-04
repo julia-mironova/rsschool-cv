@@ -1,0 +1,79 @@
+.video {
+    @extend %section;
+      
+   }
+ 
+ .wrapper__video {
+     @extend %wrapper_section;
+     margin: 75px auto;
+     @include media-landskape {
+        margin: 60px auto;
+        padding: 0 20px;
+    }
+    @include media-portrete {
+        margin: 40px 0;
+    }
+    @include media-min {
+        padding: 0 5px;
+    }
+     .video_page {
+         @extend %element_row;
+         padding-top: 75px;
+     }
+     .page-video-text {
+        @extend %element_row;
+        padding-bottom: 50px;
+        @include media-landskape {
+            padding-bottom: 40px;
+         }
+         @include media-portrete {
+            padding-bottom: 20px;
+            overflow: hidden;
+         }
+         p {
+             margin: 0;
+             max-width: 720px;
+             @include media-landskape {
+                 display: none;
+                 max-width: 50px;
+             }
+         }
+     }
+     .video-small {
+        @extend %element_row; 
+        @include media-portrete {
+            max-width: ($content-width-portrete)-40px;
+        }
+
+        .player-small {
+            padding-right: 42px;
+            &:last-child{
+                padding-right: 0;
+            }
+            @include media-landskape {
+                max-width: 300px; 
+            }
+            @include media-portrete {
+                max-width: 354px; 
+                max-height: 200px; 
+                justify-content: space-between;
+                padding-right: 20px;
+                &:last-child{
+                   display: none;
+                }
+            }
+            @include media-phone {
+                max-width: 180px; 
+                max-height: 100px; 
+            }
+            @include media-min {
+                max-width: 140px; 
+                max-height: 100px; 
+                padding-right: 5px;
+            }
+         }
+     }
+     
+    }
+
+  

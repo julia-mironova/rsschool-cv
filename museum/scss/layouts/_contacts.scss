@@ -1,0 +1,84 @@
+.contacts {
+   @extend %section;
+  }
+
+.wrapper__contacts {
+    @extend %wrapper_section;
+    margin: 75px auto;
+    @include media-landskape {
+        margin: 60px auto;
+        padding: 0 20px;
+    }
+    @include media-portrete {
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    .contacts_page {
+        @extend %element_row;
+        padding-top: 75px;
+        @include media-landskape {
+            padding-top: 60px;
+        }
+        @include media-portrete {
+            padding-top: 40px;
+            display: inline-flex;
+            flex-direction: column;
+        }
+    }
+   
+    .big-text {
+        font-family: "Roboto";
+        @include font(500, 2.8rem, 3.3rem, 1px, 0, capitalize);
+        padding-bottom: 50px;
+        &:first-child {
+            padding-bottom: 0px;
+        }
+        @include media-portrete {
+            @include font(500, 2.0rem, 2.3rem, 1px, 0, capitalize); 
+            padding-bottom: 40px;
+        }
+        @include media-phone {
+            @include font(500, 1.6rem, 1.9rem, 1px, 0, capitalize); 
+        }
+    }
+    h5 {
+        margin-bottom: 20px;
+        a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        @include media-portrete {
+            margin-bottom: 15px;  
+        }
+    }
+    .map {
+        @include media-landskape {
+            max-width: 694px; 
+    }
+    @include media-portrete {
+        max-width: 728px; 
+}
+@include media-min {
+    max-width: 300px; 
+}
+    
+}
+}
+
+.gold-line {
+    @include media-landskape {
+        max-width: ($content-width-landskape)-80px; 
+}
+@include media-portrete {
+    max-width: ($content-width-portrete)-40px; 
+}
+
+@include media-phone {
+    max-width: ($content-width-phone)-40px; 
+}
+@include media-min {
+    max-width: ($content-width-min)-40px; 
+}
+}
+   

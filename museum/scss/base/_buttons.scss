@@ -1,0 +1,35 @@
+.button_welcome{
+    background-color:$color-dark-red;
+    border-color: $color-dark-red;
+    padding: 20px 30px;
+    border-radius: 10px;
+    max-width: 365px;
+    @include media-landskape {
+        max-width: 300px;
+      }
+      @include media-portrete {
+          display: none;
+      }
+    max-height: 75px;
+    margin-top: 70px;
+    transition: all 1.5s;
+}
+
+.button_welcome:hover {
+    background-color: $color-font-gold-hover; 
+    border-color: $color-font-gold-hover;
+}  
+
+.button_text_light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 2.6rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: $color-font-light;
+    padding: 0px 35px;
+    @include media-landskape {
+        line-height: 2.3rem;
+        padding: 0;
+      }
+}
