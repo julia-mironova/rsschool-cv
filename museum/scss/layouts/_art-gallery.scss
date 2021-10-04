@@ -32,6 +32,10 @@
     max-width: ($content-width-phone)-20px;
      max-height: 640px;
    }
+   @include media-min {
+    max-width: ($content-width-min)-20px;
+     max-height: 640px;
+   }
 }
   
   .picture-inner-container {
@@ -55,6 +59,10 @@
 
     @include media-phone {
       max-height: 2250px;
+      padding-left: 20px;
+    }
+    @include media-phone {
+      max-height: 1250px;
       padding-left: 20px;
     }
   }
@@ -84,4 +92,8 @@
       padding-top: 0px;
      }
    }
+   @include media-min {
+    max-width: 125px;
+    max-height: 225px;
+  }
   }

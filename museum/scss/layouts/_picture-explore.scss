@@ -70,10 +70,16 @@
     @include media-phone {
         max-width: ($content-width-phone)-40px;
     }
+    @include media-min {
+        max-width: ($content-width-min)-40px;
+    }
 }
 
 .quins-3-photo {
     @include media-phone {
         max-width: 380px;
+    }
+    @include media-min {
+        max-width: 280px;
     }
 }

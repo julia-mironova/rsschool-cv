@@ -13,6 +13,9 @@
     @include media-portrete {
         margin: 40px 0;
     }
+    @include media-min {
+        padding: 0 5px;
+    }
      .video_page {
          @extend %element_row;
          padding-top: 75px;
@@ -62,6 +65,11 @@
             @include media-phone {
                 max-width: 180px; 
                 max-height: 100px; 
+            }
+            @include media-min {
+                max-width: 140px; 
+                max-height: 100px; 
+                padding-right: 5px;
             }
          }
      }

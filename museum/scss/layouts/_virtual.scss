@@ -24,6 +24,9 @@
     @include media-phone {
         max-width: ($content-width-phone)-40px;
     }
+    @include media-min {
+        max-width: ($content-width-min)-40px;
+    }
 }
 }
 .photos-row {

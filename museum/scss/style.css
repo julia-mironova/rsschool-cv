@@ -533,6 +533,11 @@ a {
     margin: 0;
   }
 }
+@media (max-width: 320px) {
+  .footer__nav {
+    max-width: 300px;
+  }
+}
 
 .footer__navigation {
   font-weight: 200;
@@ -739,6 +744,11 @@ a {
     height: 80px;
   }
 }
+@media (max-width: 320px) {
+  .slider {
+    padding: 0;
+  }
+}
 .slider_dots {
   width: 180px;
   display: flex;
@@ -812,6 +822,11 @@ a {
 @media (max-width: 420px) {
   .virtual .gold-line-small {
     max-width: 380px;
+  }
+}
+@media (max-width: 320px) {
+  .virtual .gold-line-small {
+    max-width: 280px;
   }
 }
 
@@ -980,6 +995,11 @@ a {
     max-width: 728px;
   }
 }
+@media (max-width: 320px) {
+  .wrapper__contacts .map {
+    max-width: 300px;
+  }
+}
 
 @media (max-width: 1024px) {
   .gold-line {
@@ -989,6 +1009,16 @@ a {
 @media (max-width: 768px) {
   .gold-line {
     max-width: 728px;
+  }
+}
+@media (max-width: 420px) {
+  .gold-line {
+    max-width: 380px;
+  }
+}
+@media (max-width: 320px) {
+  .gold-line {
+    max-width: 280px;
   }
 }
 
@@ -1086,10 +1116,20 @@ a {
     max-width: 380px;
   }
 }
+@media (max-width: 320px) {
+  .gold-line-3 {
+    max-width: 280px;
+  }
+}
 
 @media (max-width: 420px) {
   .quins-3-photo {
     max-width: 380px;
+  }
+}
+@media (max-width: 320px) {
+  .quins-3-photo {
+    max-width: 280px;
   }
 }
 
@@ -1134,6 +1174,12 @@ a {
     max-height: 640px;
   }
 }
+@media (max-width: 320px) {
+  .picture-container {
+    max-width: 300px;
+    max-height: 640px;
+  }
+}
 
 .picture-inner-container {
   max-height: 2950px;
@@ -1163,6 +1209,12 @@ a {
 @media (max-width: 420px) {
   .picture-inner-container {
     max-height: 2250px;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 420px) {
+  .picture-inner-container {
+    max-height: 1250px;
     padding-left: 20px;
   }
 }
@@ -1199,6 +1251,12 @@ a {
     padding-top: 0px;
   }
 }
+@media (max-width: 320px) {
+  .picture-gallery {
+    max-width: 125px;
+    max-height: 225px;
+  }
+}
 
 .wrapper__video {
   margin: 75px auto;
@@ -1212,6 +1270,11 @@ a {
 @media (max-width: 768px) {
   .wrapper__video {
     margin: 40px 0;
+  }
+}
+@media (max-width: 320px) {
+  .wrapper__video {
+    padding: 0 5px;
   }
 }
 .wrapper__video .video_page {
@@ -1272,6 +1335,13 @@ a {
   .wrapper__video .video-small .player-small {
     max-width: 180px;
     max-height: 100px;
+  }
+}
+@media (max-width: 320px) {
+  .wrapper__video .video-small .player-small {
+    max-width: 140px;
+    max-height: 100px;
+    padding-right: 5px;
   }
 }
 

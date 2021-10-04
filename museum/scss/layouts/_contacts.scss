@@ -59,6 +59,9 @@
     @include media-portrete {
         max-width: 728px; 
 }
+@include media-min {
+    max-width: 300px; 
+}
     
 }
 }
@@ -69,6 +72,13 @@
 }
 @include media-portrete {
     max-width: ($content-width-portrete)-40px; 
+}
+
+@include media-phone {
+    max-width: ($content-width-phone)-40px; 
+}
+@include media-min {
+    max-width: ($content-width-min)-40px; 
 }
 }
    
