@@ -5,12 +5,18 @@
     @include media-landskape {
         margin: 60px auto 0;
     }  
+    @include media-portrete {
+        margin: 0;
+    }
    }
    .wrapper__explore {
     @extend %wrapper_section;
     margin: 75px auto;
     @include media-landskape {
         margin: 60px auto;
+    }
+    @include media-portrete {
+        margin: 40px auto;
     }
     .explore_page {
         @extend %element_row;
@@ -35,6 +41,9 @@
         .yellow-text {
             color: $color-font-gold-hover;
         }
+        @include media-portrete {
+            display: none;
+        }
         
     }
 }
@@ -53,5 +62,9 @@
     height: 3px;
     @include media-landskape {
         max-width: 960px;
+    }
+    @include media-portrete {
+        max-width: ($content-width-portrete)-40px;
+        padding: 20px 0 40px 0;
     }
 }

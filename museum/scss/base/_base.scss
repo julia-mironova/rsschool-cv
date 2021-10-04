@@ -46,6 +46,9 @@ h1 {
   h3 {
     @extend %font-h;
     @include font(normal, 3.2rem, 3.5rem, 5px, 0);
+    @include media-portrete {
+      @include font(normal, 2.2rem, 2.4rem, 3px, 0);
+    }
   }
     
   h5 {
@@ -123,12 +126,20 @@ color: $color-bg-dark;
   line-height: 2.6rem;
   padding: 10px 0;
   margin: 0px;
+  @include media-portrete {
+    font-size: 1.8rem;
+  line-height: 2.1rem;
+  }
  }
 
  .smaller-panorama {
   font-size: 1.8rem;
   line-height: 2.1rem;
   margin: 0px;
+  @include media-portrete {
+    font-size: 1.6rem;
+  line-height: 1.9rem;
+  }
  }
 
 
