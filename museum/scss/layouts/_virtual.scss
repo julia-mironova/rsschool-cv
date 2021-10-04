@@ -10,6 +10,9 @@
     @include media-landskape {
         margin: 60px 0;
     }
+    @include media-phone {
+        margin: 40px 0;
+    }
 }
 .gold-line-small {
     @include media-landskape {
@@ -17,6 +20,9 @@
     }
     @include media-portrete {
         max-width: ($content-width-portrete)-40px;
+    }
+    @include media-phone {
+        max-width: ($content-width-phone)-40px;
     }
 }
 }
@@ -50,6 +56,9 @@
     @include media-portrete {
         margin-top: 40px;
 }
+@include media-phone {
+    margin-bottom: 25px;
+};
 }
 
 .text_virtual {

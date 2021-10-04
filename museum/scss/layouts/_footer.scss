@@ -3,6 +3,14 @@
   @include media-landskape {
     padding: 60px 0 50px 0;
   }
+  @include media-phone {
+    padding: 40px 0;
+  }
+  .text_white_gold {
+    @include media-phone {
+      @include font(200, 1.6rem, 1.8rem, 5px, 0)
+    }
+  }
   // margin: 0 auto;
 }
 
@@ -16,7 +24,24 @@
       padding: 0 20px 0 20px;
     }
   }
+  @include media-portrete {
+    span {
+      @include font(200, 2.2rem, 2.2rem, 2px, 0, none);
+    }
+  }
+  @include media-phone {
+    flex-direction: column;
+    &_louvre {
+      padding-bottom: 40px;
+    }
+  }
 
+}
+
+.footer__louvre {
+  @include media-phone {
+    padding-bottom: 40px;
+  }
 }
 
 .footer-portrete {
@@ -33,6 +58,11 @@
   margin: 0 0 50px 0;
   @include media-landskape {
     max-width: 250px;
+    max-height: 150px;
+    margin: 0;
+  }
+  @include media-phone {
+    max-width: 380px;
     max-height: 150px;
     margin: 0;
   }
@@ -69,8 +99,11 @@
   }
   @include media-portrete {
     padding-bottom: 0;
-   
-  }
+   }
+   @include media-phone {
+    justify-content:center;
+    padding-bottom: 40px;
+   }
   }
 
 .social__links {
@@ -86,6 +119,9 @@
   @include media-portrete {
     margin: 0 24px 0 0;
   }
+  @include media-phone {
+    margin: 0 5px 0 0;
+   }
   
 }
 
@@ -100,7 +136,22 @@
     justify-content: space-between;
     align-items: center;
 }
-/*
+
+.phone {
+  display: flex;
+  flex-direction: row;
+  span {
+    @include media-phone {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.phone-none {
+  @include media-phone {
+    display: none;
+  }
+}
 
 
 
@@ -111,7 +162,7 @@
    
 
 
-*/
+
 
 
   

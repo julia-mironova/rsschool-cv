@@ -8,6 +8,7 @@
       @include media-portrete {
         padding: 40px 20px;
     }
+    
     }
    }
 
@@ -27,6 +28,10 @@
    max-width: ($content-width-portrete)-20px;
     max-height: 1080px;
   }
+  @include media-phone {
+    max-width: ($content-width-phone)-20px;
+     max-height: 640px;
+   }
 }
   
   .picture-inner-container {
@@ -47,6 +52,11 @@
       gap: 24px 24px;
       justify-content: space-around;
     }
+
+    @include media-phone {
+      max-height: 2250px;
+      padding-left: 20px;
+    }
   }
 
   .picture-gallery {
@@ -66,5 +76,12 @@
    @include media-portrete {
     max-width: 352px;
     max-height: 440px;
+   }
+   @include media-phone {
+    max-width: 178px;
+    max-height: 225px;
+    &:nth-child(11n) {
+      padding-top: 0px;
+     }
    }
   }

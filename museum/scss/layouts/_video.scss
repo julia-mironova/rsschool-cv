@@ -41,6 +41,7 @@
         @include media-portrete {
             max-width: ($content-width-portrete)-40px;
         }
+
         .player-small {
             padding-right: 42px;
             &:last-child{
@@ -57,6 +58,10 @@
                 &:last-child{
                    display: none;
                 }
+            }
+            @include media-phone {
+                max-width: 180px; 
+                max-height: 100px; 
             }
          }
      }

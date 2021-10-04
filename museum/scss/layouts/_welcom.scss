@@ -35,7 +35,8 @@
         @include media-phone {
              padding-top: 180px;
              max-width: 380px;
-             height: 340px;
+             max-height: 340px;
+             padding-bottom: 30px;
          } 
         
         
@@ -67,7 +68,9 @@
         max-height: 525px;
         padding-bottom: 60px;
      }
-   
+     @include media-phone {
+        max-width: 380px;
+     }
 }
 
 
@@ -88,9 +91,9 @@
         width: 600px;
       }
       @include media-phone {
-        width: 380px;
-        padding: 0;
-        height: 100px;
+        width: 280px;
+        padding: 0 50px;
+        height: 80px;
       }
     height: 120px;
     padding: 0 75px;

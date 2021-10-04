@@ -67,4 +67,13 @@
         max-width: ($content-width-portrete)-40px;
         padding: 20px 0 40px 0;
     }
+    @include media-phone {
+        max-width: ($content-width-phone)-40px;
+    }
+}
+
+.quins-3-photo {
+    @include media-phone {
+        max-width: 380px;
+    }
 }
