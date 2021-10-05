@@ -61,6 +61,22 @@ h6 {
 }
 .blue {
   color: blue;
+  max-height: 350px;
+
+}
+
+.photo-proj {
+max-width: 200px;
+}
+
+.photo-project {
+  max-height: 278px;
+}
+
+.column {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
 }
 
 /*footer*/
@@ -96,6 +112,7 @@ footer:last-child {
 .photo {
   max-width: 310px;
   max-height: 350px;
+  padding: 20px;
 }
 
 /* contacts-section-link styles */
