@@ -445,7 +445,7 @@ a {
   .header__wrapper {
     margin: 0;
     padding: 0 20px;
-    max-width: 984px;
+    max-width: 964px;
   }
 }
 
@@ -475,7 +475,7 @@ a {
 }
 
 .louvre__svg {
-  background-image: url(../assets/svg/Vector-louvre.svg);
+  background-image: url(/assets/svg/Vector-louvre.svg);
   width: 49px;
   height: 26px;
   margin: 0px 20px 0 0;
@@ -807,20 +807,30 @@ a {
     width: 75px;
   }
 }
-.slider_item {
+.slider .item {
   background-color: #ffffff;
   height: 16px;
   width: 16px;
 }
 @media (max-width: 420px) {
-  .slider_item {
+  .slider .item {
     height: 7px;
     width: 7px;
   }
 }
-.slider_item:hover {
+.slider .item:hover {
   background-color: #D2B183;
-  transition: 0.5s;
+}
+.slider .item-gold {
+  background-color: #D2B183;
+  height: 16px;
+  width: 16px;
+}
+@media (max-width: 420px) {
+  .slider .item-gold {
+    height: 7px;
+    width: 7px;
+  }
 }
 
 .slider_btn {

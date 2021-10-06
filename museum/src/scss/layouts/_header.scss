@@ -14,7 +14,7 @@
     @include media-landskape {
        margin: 0; 
        padding: 0 20px;
-       max-width: ($content-width-landskape)-40px;
+       max-width: ($content-width-landskape)-60px;
     }
 
 }
@@ -47,7 +47,7 @@
 }
 
 .louvre__svg {
-    background-image: url(../assets/svg/Vector-louvre.svg);
+    background-image: url(/assets/svg/Vector-louvre.svg);
     width: 49px;
     height: 26px;
     @include media-phone {

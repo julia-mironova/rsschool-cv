@@ -4,11 +4,14 @@
   "description": "project on scss",
   "main": "index.js",
   "scripts": {
-    "style": "sass --watch scss/style.scss scss/style.css"
+    "style": "sass --watch src/scss/style.scss src/scss/style.css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.42.1"
+  },
+  "dependencies": {
+    "webpack": "^5.57.1"
   }
 }
