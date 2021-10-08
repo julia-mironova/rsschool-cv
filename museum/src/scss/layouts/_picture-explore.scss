@@ -8,6 +8,15 @@
     @include media-portrete {
         margin: 0;
     }
+    .quins-3-photo-up,
+    .quins-3-photo-down {
+    @include media-phone {
+        max-width: 380px;
+    }
+    @include media-min {
+        max-width: 280px;
+    }
+}
    }
    .wrapper__explore {
     @extend %wrapper_section;
@@ -75,11 +84,15 @@
     }
 }
 
-.quins-3-photo {
-    @include media-phone {
-        max-width: 380px;
-    }
-    @include media-min {
-        max-width: 280px;
+//for picture slider
+.third-page {
+    position: relative;
+    background-image: url(/assets/img/3rd-page-down.jpg);
+
+     
+    .third-page__slider {
+        position: absolute;
+        margin-top: -700px;
+        z-index: 3;
     }
 }

@@ -1099,6 +1099,18 @@ a {
     margin: 0;
   }
 }
+@media (max-width: 420px) {
+  .third-page .quins-3-photo-up,
+.third-page .quins-3-photo-down {
+    max-width: 380px;
+  }
+}
+@media (max-width: 320px) {
+  .third-page .quins-3-photo-up,
+.third-page .quins-3-photo-down {
+    max-width: 280px;
+  }
+}
 
 .wrapper__explore {
   margin: 75px auto;
@@ -1189,15 +1201,14 @@ a {
   }
 }
 
-@media (max-width: 420px) {
-  .quins-3-photo {
-    max-width: 380px;
-  }
+.third-page {
+  position: relative;
+  background-image: url(/assets/img/3rd-page-down.jpg);
 }
-@media (max-width: 320px) {
-  .quins-3-photo {
-    max-width: 280px;
-  }
+.third-page .third-page__slider {
+  position: absolute;
+  margin-top: -700px;
+  z-index: 3;
 }
 
 .art-gellery .page-gallery {

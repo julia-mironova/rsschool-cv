@@ -1,16 +1,57 @@
-window.onload = function () {
-   addTagsClickHandler();
+let start = 0; //1-й модуль
+let currentNum = 0;
+
+window.addEventListener('load', function () {
+    updateState();
+})
+
+const sliderTourn = document.querySelector('.welcom_pictures_photos');
+const numChange =document.querySelector('.text_white_gold');
+const currentDot = document.querySelector('.slider_dots');
+const numMax = document.querySelectorAll('.welcom_photos_padding').length-1;
+const arr = currentDot.querySelectorAll('.slider_item');
+
+document.querySelector('.arrow_right').addEventListener('click', function (){
+    console.log("right");
+    currentNum = currentNum+1;
+    if (currentNum > numMax) {
+        currentNum = 0;
+    };
+    updateState();
+
+})
+
+document.querySelector('.arrow_left').addEventListener('click', function (){
+    console.log("left");
+    currentNum = currentNum-1;
+    if (currentNum < 0) {
+        currentNum = numMax;
+    };
+    updateState();
+});
+
+for (let i=0; i<arr.length; i++) {
+    let elem = arr[i];
+    elem.addEventListener('click', function (){
+        console.log("squere");
+        currentNum = elem.querySelector("span").innerText-1;
+        updateState();
+    });
 }
 
-const addTagsClickHandler = () => {
-     document.querySelector(".slider_dots").addEventListener("click", (e) => {
-       if (e.target.classList.contains("slider_item")) {
-           let clikedDote = e.target;
-            removeSelectedDote();
-            selectClicedDote(clikedDote);
+function updateState() {
+    removeSelectedDote();
+    selectClicedDote(arr[currentNum]);
+    numerInSpan();
+    updatePicture();
+}
 
-       }
-     })
+const numerInSpan = () => {
+    document.querySelector('.number_written').textContent = `0${currentNum+1}| 05`; 
+}
+
+const updatePicture = () => {
+    sliderTourn.style.transform = `translateX(-${currentNum}000px)`;
 }
 
 const removeSelectedDote = () => {
@@ -25,84 +66,6 @@ const selectClicedDote = (clikedDote) => {
     clikedDote.classList.add("item-gold");
     clikedDote.classList.remove("item");
 }
-
-
-let start = 0; //1-й модуль
-num = 1;
-const sliderTourn = document.querySelector('.welcome_picktures_photos');
-
-document.querySelector('.arrow_right').addEventListener('click', function (){
-    console.log("right");
-    start = start + 1000;
-    console.log(`start=${start}`);
-    if (start > 4000) {
-        start = 0;
-    }
-    sliderTourn.style.transform = `translateX(${-start}px)`;
-})
-
-document.querySelector('.arrow_left').addEventListener('click', function (){
-    console.log("left");
-    start = start - 1000;
-    if (start < 0) {
-        start = 4000;
-    }
-    sliderTourn.style.transform = `${-start}px`;
-});
-
-//change num of slides in arrow way
-let num = 1;
-let answer = `0${num}`;
-console.log(`answer=${answer}`);
-document.querySelector('.arrow_right').addEventListener('click', function (){
-    num = num+1;
-    if (num > 5) {
-        num = 1;
-    }
-    return num;
-});
-
-document.querySelector('.arrow_left').addEventListener('click', function (){
-    num = num-1;
-    if (num < 1) {
-        num = 5;
-    }
-    return num;
-});
-
-//change num of slides in squere way and tourn slide
-document.querySelector(".slider_dots").addEventListener("click", function () {
-    switch (/*содержимое спан*/) {
-            case (1):
-            num = 1;
-            sliderTourn.style.transform = `${-start}px`;
-            break;
-            case (2):
-                num = 2;
-                sliderTourn.style.transform = `${-1000}px`;
-                break;
-                case (3):
-                    num = 3;
-                    sliderTourn.style.transform = `${-2000}px`;
-                    break; 
-                    case (4):
-                        num = 4;
-                        sliderTourn.style.transform = `${-3000}px`;
-                        break; 
-                         case (5):
-                        num = 5;
-                        sliderTourn.style.transform = `${-4000}px`;
-                        break;                    
-    }
-});
-
-
-//slider squeres
-
-
-
-
-
 
 /*slider by arrows
 let welcomContainer = document.querySelector(".welcom_photos_padding");
