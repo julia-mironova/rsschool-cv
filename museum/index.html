@@ -98,15 +98,15 @@
         <div class="slider">
           <p class="text_white_gold">01 | 05</p>
           <div class="slider_dots">
-            <div class="slider_item item-gold"></div>
-            <div class="slider_item item"></div>
-            <div class="slider_item item"></div>
-            <div class="slider_item item"></div>
-            <div class="slider_item item"></div>
+            <div class="slider_item item-gold"><span>1</span></div>
+            <div class="slider_item item"><span>2</span></div>
+            <div class="slider_item item"><span>3</span></div>
+            <div class="slider_item item"><span>4</span></div>
+            <div class="slider_item item"><span>5</span></div>
           </div>
           <div class="slider_btn">
-            <div class="arrow_l-r">&larr;</div>
-            <div class="arrow_l-r">&rarr;</div>
+            <div class="arrow_left">&larr;</div>
+            <div class="arrow_right">&rarr;</div>
           </div>
         </div>
         </div>
@@ -241,9 +241,17 @@
               been damaged in any way, but because it looked different.
             </p>
           </div>
-          <div class="third-page">
-          <img class="quins-3-photo" src="assets/img/3rd-page-down.jpg" alt="quins and dogs grey">
+          <div class="third-page" draggable="false">
+          <img class="quins-3-photo-down" src="assets/img/3rd-page-down.jpg" alt="quins and dogs grey" draggable="false">
+          <img class="quins-3-photo-up" src="assets/img/3rd-page-up.jpg" alt="quins and dogs grey" draggable="false">
           
+            
+           
+            <img class="picture-explore__slider" src="./assets/img/picture-explore/slider.png" alt="slider" draggable="false">
+            <input class="picture-explore__input" id="picture-explore-input" type="range" min="0" max="100" step="0.1" value="61.1">
+        
+
+
           </div>
         </div>
       </div>
@@ -286,13 +294,15 @@
         </div>
       
     </section>
-   <!-- <section class="gold-text">
+   <section class="tickets">
       <div id="tikets" class="wrapper">
-        <h2 class="">Buy tickets</h2>
+        <div class="wrapper__tickets">
+        <h2 class="gold-text">Buy tickets</h2>
         <img class="gold-line" src="assets/img/gold-line.png" alt="gold-line">
 <div class="tickets-photo-buying">
         <img class="photo-tickets" src="assets/img/buy-tickets.jpg" alt="for
         tickets photo">
+        <div class="tickets_part">
         <div class="radio-btn">
               <p class="big-text">Ticket Type</p>
               <h5><label>
@@ -331,11 +341,12 @@
           </div>              
         </div>
         </div>
+      </div>
         <div class="parallax">
           <img class="parallax-all" src="src/assets/img/Museum/parallax1.png" alt="parallax">
         </div>
-      
-    </section>-->
+      </div>
+    </section>
     <section class="contacts">
       <div class="wrapper">
       <div class="wrapper__contacts">
@@ -438,6 +449,6 @@
       </footer>
         
      <script src="src/js/gallery.js"></script>
-      <script src="src/js/index.js" type="module"></script>
+      <script src="/dist/main.js"></script>
 
 </body></html>

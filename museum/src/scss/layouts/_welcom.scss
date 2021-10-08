@@ -38,18 +38,16 @@
              max-height: 340px;
              padding-bottom: 30px;
          } 
+               
         
-        
-       /* &_photos {
-            position: relative; 
-            z-index:2;
-           
-            
-            background-color: blue;
-            width: 20%;
-         }*/
 }
 }
+
+.welcom_pictures_photos {
+    display: flex;
+    flex-direction: row;
+    transform: translateX(0);
+  }
 
 .wrapper__welcom {
           @include media-landskape {
@@ -122,6 +120,10 @@
           }
               
 }
+
+.slider_item span {
+    display: none;
+}
 //new class
 .item-gold {
     background-color: $color-photo-unviseted;
@@ -140,7 +142,15 @@
 
 .slider_btn {
     display: flex;
-    .arrow_l-r {
+    .arrow_left {
+        color: $color-font-light;
+        width: 30px;
+        &:hover {
+            color:$color-photo-unviseted;  
+            transition: 0.5s;
+        }
+    }
+    .arrow_right {
         color: $color-font-light;
         width: 30px;
         &:hover {
