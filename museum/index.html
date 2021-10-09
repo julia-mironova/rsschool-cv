@@ -225,8 +225,13 @@
       <div class="wrapper wrapper__explore">
         <div id="explore" class="explore_page">
           <div class="container">
+            <div class="explore-row">
+              <div class="explore-column">
             <h2 class="light-text">Picture explore</h2>
             <img class="gold-line-3" src="assets/img/gold-line.png" alt="gold-line">
+           
+            
+              
             <p class="text3">
               Las Meninas is a 1656 painting by Diego Velázquez, the leading
               artist of the Spanish Golden Age.
@@ -241,15 +246,17 @@
               been damaged in any way, but because it looked different.
             </p>
           </div>
-          <div class="third-page">
-         
-            <!--<img class="quins-3-photo-down" src="assets/img/3rd-page-down.jpg" alt="quins and dogs grey">-->
-        
-             <img class="quins-3-photo-up" src="assets/img/3rd-page-up.jpg" alt="quins and dogs grey">
-        
-          <img class="third-page__slider" src="assets/img/explore-slider.png" alt="slider">
-          <input class="third-page__input" id="picture-explore-input" type="range" min="0" max="100" step="0.1" value="60">  
           
+          
+          <div class="third-page-compare">
+             <div class="hidden-phote">
+             <img class="quins-3-photo-up" src="assets/img/3rd-page-up.jpg" alt="quins and dogs grey">
+            </div>           
+              <img class="img_comp_slider" src="assets/img/explore-slider.png" alt="slider">
+            
+              <input class="third-page__input" id="picture-explore-input" type="range" min="0" max="100" step="0.5" value="60"> 
+        </div>
+      </div>
         </div>
       </div>
     </section>
@@ -444,7 +451,7 @@
        </div>
       </div>
       </footer>
-        
+      <script src="/src/js/Slider_explore.js"></script>  
      <script src="/src/js/Slider_welcom.js"></script>
       <script src="/dist/main.js"></script>
 

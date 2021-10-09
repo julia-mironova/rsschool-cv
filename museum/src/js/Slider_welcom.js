@@ -32,9 +32,9 @@ document.querySelector('.arrow_left').addEventListener('click', function (){
 
 document.querySelector('.welcom_pictures_photos').addEventListener('click', function (){
     console.log("mouse-picture-change");
-    currentNum = currentNum-1;
-    if (currentNum < 0) {
-        currentNum = numMax;
+    currentNum = currentNum+1;
+    if (currentNum > numMax) {
+        currentNum = 0;
     };
     updateState();
 });
@@ -61,7 +61,7 @@ const numerInSpan = () => {
 
 const updatePicture = () => {
     sliderTourn.style.transform = `translateX(-${currentNum}000px)`;
-}
+    }
 
 const removeSelectedDote = () => {
     let dots = document.querySelectorAll(".slider_dots .slider_item");
