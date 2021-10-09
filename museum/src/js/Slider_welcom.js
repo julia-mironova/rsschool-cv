@@ -30,6 +30,15 @@ document.querySelector('.arrow_left').addEventListener('click', function (){
     updateState();
 });
 
+document.querySelector('.welcom_pictures_photos').addEventListener('click', function (){
+    console.log("mouse-picture-change");
+    currentNum = currentNum-1;
+    if (currentNum < 0) {
+        currentNum = numMax;
+    };
+    updateState();
+});
+
 for (let i=0; i<arr.length; i++) {
     let elem = arr[i];
     elem.addEventListener('click', function (){
