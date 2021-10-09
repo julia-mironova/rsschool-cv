@@ -53,6 +53,13 @@
         }
     }
     .map {
+        .black_map {
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+             filter: grayscale(100%);
+        }
         @include media-landskape {
             max-width: 694px; 
     }

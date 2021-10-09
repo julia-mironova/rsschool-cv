@@ -32,6 +32,13 @@ function toArrgallery(galleryImgArr) {
     img.src = imgArr[i];
     img.alt = `galery`;
     pictureInnerContainer.append(img);
+    
   }
 }
 toArrgallery(galleryImgArr);
+
+//make a poetapnoe view of pictures
+window.addEventListener('load', function () {
+  
+});
+

@@ -39,7 +39,8 @@
 }
   
   .picture-inner-container {
-    max-height: 2950px;
+    max-height: 5950px;
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -74,9 +75,9 @@
    &:first-child{
        padding-top: 50px;
    }
-   &:nth-child(11n) {
+  /* &:nth-child(7n) {
     padding-top: 50px;
-   }
+   }*/
    @include media-landskape {
     max-width: 304px;
     max-height: 380px;

@@ -3,7 +3,7 @@ let workValue = 100;
 const sliderLine = document.querySelector('.img_comp_slider');
 const widthPhote = document.querySelector('.hidden-phote');
 
-window.addEventListener('mousemove', function () {
+document.querySelector('.explore_page').addEventListener('mousemove', function () {
     getValue();
 })
 
@@ -18,9 +18,14 @@ function getValue() {
 }
 
 const updateSliderLine = () => {
+    if (workValue<30) {
+        sliderLine.style.transform = `translateX(${10+workValue*5.6}px)`;
+    } else if (workValue<70){
      sliderLine.style.transform = `translateX(${10+0.95*workValue+workValue*5.6}px)`;
+    } else {
+        sliderLine.style.transform = `translateX(${30+0.95*workValue+workValue*5.6}px)`;
     }
-    
+}  
 
 
 const updatePhotoWidth = () => {
