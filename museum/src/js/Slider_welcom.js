@@ -6,7 +6,7 @@ window.addEventListener('load', function () {
 })
 
 const sliderTourn = document.querySelector('.welcom_pictures_photos');
-const numChange =document.querySelector('.text_white_gold');
+
 const currentDot = document.querySelector('.slider_dots');
 const numMax = document.querySelectorAll('.welcom_photos_padding').length-1;
 const arr = currentDot.querySelectorAll('.slider_item');
