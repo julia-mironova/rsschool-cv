@@ -133,9 +133,67 @@
    // video big
    .video-big-player{
        padding-bottom: 40px;
+       cursor: pointer;
    .video-big {
        width: $content-width-desktop;
        height: 650px;
    }
 }
 
+button {
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    z-index: 5;
+  }
+  
+ 
+  /*.player-play-big,*/
+  .with-img {
+    width: 1440px;
+    height: 700px;
+  }
+  
+  .big-video-individ {
+    width: 1440px;
+    height: 850px;
+  }
+  
+  .player {
+    max-width: 1440px;
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+  }
+  .player-play-5s,
+  .player-next-5s,
+  .player-sound {
+    padding: 28px 41px;
+  }
+  .player-sound {
+    padding-right: 20px;
+  }
+  .player-play-normal {
+    padding: 28px 0;
+  }
+  .toPause {
+    width: 22px;
+    height: 30px;
+  }
+  .player-play-video,
+  .player-play-sound {
+    padding: 35px 0;
+  }
+  .player-play-sound {
+    padding-right: 35px;
+  }
+  .screen-full {
+    width: 36px;
+  }
+  .progress-video {
+    width: 820px;
+  }
+  .progress-sound {
+    width: 155px;
+  }
+  

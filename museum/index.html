@@ -271,7 +271,50 @@
           </p>
         </div>
         <div class="video-big-player">
-          <iframe class="video-big" src="https://www.youtube.com/embed/NOhDysLnTvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <video src="assets/video/cat-frog.mp4" class="big-video-individ"></video>
+        
+          <div class="player" style="background-image: url('assets/img/Video/player-btn/player-back.png')" >    
+            <button class="player-play-5s" data-skip="-5">
+              <img src="assets/img/Video/player-btn/back-5sec.png" alt="-5s" />
+            </button>
+            <button class="player-play-normal">
+              <img src="assets/img/Video/player-btn/play.png" alt="normal play" class="toPause" />
+            </button>
+            <button class="player-next-5s" data-skip="+5">
+              <img src="assets/img/Video/player-btn/next-5sec.png" alt="+5s" />
+            </button>
+            <div class="player-play-video">
+              <input
+                type="range"
+                class="progress-video"
+                id="progress-video"
+                min="0"
+                max="100"
+                value="0"
+                step="2"
+              />
+            </div>
+            <button class="player-sound">
+              <img src="assets/img/Video/player-btn/sound.png" alt="sound" class="noSound" />
+            </button>
+            <div class="player-play-sound">
+              <input
+                type="range"
+                class="progress-sound"
+                id="volume"
+                name="volume"
+                min="0"
+                max="1"
+                value="0.6"
+                step="0.1"
+              />
+            </div>
+            <button class="screen-full">
+              <img src="assets/img/Video/player-btn/screen.png" alt="full-screen" class="screenBig" />
+            </button>
+            </div>
+       
+       
         </div>
         <div class="all_video_small">
         <div class="video_window-view">
