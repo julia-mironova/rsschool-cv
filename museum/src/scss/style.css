@@ -18,7 +18,7 @@ h3, h2 {
   flex-direction: column;
 }
 
-.wrapper__video .video-small, .wrapper__video .page-video-text, .wrapper__video .video_page, .wrapper__explore .explore_page, .wrapper__contacts .contacts_page, .slider {
+.wrapper__video .video_window-view .video-small, .wrapper__video .page-video-text, .wrapper__video .video_page, .wrapper__explore .explore_page, .wrapper__contacts .contacts_page, .slider {
   display: flex;
   justify-content: space-between;
 }
@@ -1415,45 +1415,107 @@ a {
     max-width: 50px;
   }
 }
+.wrapper__video .video_window-view {
+  position: relative;
+  z-index: 1;
+  max-width: 1440px;
+  max-height: 252px;
+  overflow: hidden;
+}
 @media (max-width: 768px) {
-  .wrapper__video .video-small {
+  .wrapper__video .video_window-view {
+    max-width: 768px;
+  }
+}
+.wrapper__video .video_window-view .video-small {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+@media (max-width: 768px) {
+  .wrapper__video .video_window-view .video-small {
     max-width: 728px;
   }
 }
-.wrapper__video .video-small .player-small {
+.wrapper__video .video_window-view .video-small .player-small {
   padding-right: 42px;
+  width: 452px;
+  height: 254px;
 }
-.wrapper__video .video-small .player-small:last-child {
+.wrapper__video .video_window-view .video-small .player-small:nth-child(5) {
   padding-right: 0;
 }
 @media (max-width: 1024px) {
-  .wrapper__video .video-small .player-small {
+  .wrapper__video .video_window-view .video-small .player-small {
     max-width: 300px;
   }
 }
 @media (max-width: 768px) {
-  .wrapper__video .video-small .player-small {
+  .wrapper__video .video_window-view .video-small .player-small {
     max-width: 354px;
     max-height: 200px;
     justify-content: space-between;
     padding-right: 20px;
   }
-  .wrapper__video .video-small .player-small:last-child {
+  .wrapper__video .video_window-view .video-small .player-small:last-child {
     display: none;
   }
 }
 @media (max-width: 420px) {
-  .wrapper__video .video-small .player-small {
+  .wrapper__video .video_window-view .video-small .player-small {
     max-width: 180px;
     max-height: 100px;
   }
 }
 @media (max-width: 320px) {
-  .wrapper__video .video-small .player-small {
+  .wrapper__video .video_window-view .video-small .player-small {
     max-width: 140px;
     max-height: 100px;
     padding-right: 5px;
   }
+}
+
+.all_video_small {
+  display: flex;
+  flex-direction: column;
+}
+.all_video_small .slider_video {
+  display: flex;
+  cursor: pointer;
+  width: 200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+}
+.all_video_small .slider_video .video_circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.all_video_small .slider_video .video_circle:hover {
+  background-color: #710707;
+}
+.all_video_small .slider_video .arrow_left:hover,
+.all_video_small .slider_video .arrow_right:hover {
+  color: #710707;
+  font-size: 4rem;
+}
+
+.item_grey {
+  background-color: #989898;
+}
+
+.item_red {
+  background-color: #710707;
+}
+
+.video-big-player {
+  padding-bottom: 40px;
+}
+.video-big-player .video-big {
+  width: 1440px;
+  height: 650px;
 }
 
 .wrapper__tickets {

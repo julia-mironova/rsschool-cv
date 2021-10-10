@@ -39,7 +39,19 @@
              }
          }
      }
+
+     .video_window-view{
+        position: relative;
+        z-index: 1;
+        max-width:$content-width-desktop;
+        max-height: 252px;
+        @include media-portrete {
+            max-width: $content-width-portrete;
+        }
+        overflow: hidden;
      .video-small {
+         display: flex;
+         flex-wrap: wrap-reverse;
         @extend %element_row; 
         @include media-portrete {
             max-width: ($content-width-portrete)-40px;
@@ -47,7 +59,9 @@
 
         .player-small {
             padding-right: 42px;
-            &:last-child{
+            width: 452px;
+            height: 254px;
+            &:nth-child(5){
                 padding-right: 0;
             }
             @include media-landskape {
@@ -73,7 +87,55 @@
             }
          }
      }
-     
+    }
     }
 
-  
+  //video small
+  .all_video_small{
+      display: flex;
+      flex-direction: column;
+       .slider_video{
+        display: flex;
+        cursor: pointer;
+        width: 200px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding-top: 40px;
+        
+        .video_circle {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            &:hover {
+                background-color: $color-video-hover;
+            }
+           
+        }
+       .arrow_left,
+       .arrow_right {
+           &:hover {
+           color: $color-video-hover;
+           font-size: 4rem;
+           }
+       }
+      }
+      
+  }
+
+  .item_grey {
+  background-color: $color-player-hover;
+  }
+  .item_red {
+    background-color: $color-video-hover;
+   }
+   // video big
+   .video-big-player{
+       padding-bottom: 40px;
+   .video-big {
+       width: $content-width-desktop;
+       height: 650px;
+   }
+}
+
