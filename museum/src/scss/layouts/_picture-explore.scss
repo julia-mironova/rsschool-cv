@@ -1,0 +1,128 @@
+.explore {
+    @extend %section;
+    }
+   .third-page-compare {
+    position: relative;
+    max-height: 700px;
+    @include media-landskape {
+        margin: 60px auto 0;
+    }  
+    @include media-portrete {
+        margin: 0;
+    }
+    .quins-3-photo-up,
+    .quins-3-photo-down {
+    @include media-phone {
+        max-width: 380px;
+    }
+    @include media-min {
+        max-width: 280px;
+    }
+}
+   }
+   
+.explore-row {
+    display: flex;
+    
+}
+
+.explore-column {
+    flex-direction: column;
+    max-width: 60%;
+}
+
+   .wrapper__explore {
+    @extend %wrapper_section;
+    margin: 75px auto;
+    @include media-landskape {
+        margin: 60px auto;
+    }
+    @include media-portrete {
+        margin: 40px auto;
+    }
+    .explore_page {
+        @extend %element_row;
+        @include media-landskape {
+            display: flex;
+            flex-direction: column;
+            padding:0 20px;
+        }
+        .text3 {
+            font-family: "Roboto";
+                @include font(300, 2.2rem, 3.8rem,1px, 0, none);
+                color:$color-font-light;
+               max-width: 660px;
+               padding-top: 25px;
+               @include media-landskape {
+                max-width: ($content-width-landskape)-40px;
+                @include font(300, 2.0rem, 3.8rem,1px, 0, none);
+                padding-top: 0;
+            };
+            
+        .yellow-text {
+            color: $color-font-gold-hover;
+        }
+        @include media-portrete {
+            display: none;
+        }
+        
+    }
+}
+
+   }
+
+   .last {
+    @include media-landskape {
+        display: none;
+}
+}
+
+.gold-line-3 {
+    padding: 25px 0 50px 0;
+    max-width:90%;
+    height: 3px;
+   
+    @include media-portrete {
+        max-width: ($content-width-portrete)-40px;
+        padding: 20px 0 40px 0;
+    }
+    @include media-phone {
+        max-width: ($content-width-phone)-40px;
+    }
+    @include media-min {
+        max-width: ($content-width-min)-40px;
+    }
+}
+
+
+//compare img
+.third-page-compare{
+    background: url(/assets/img/3rd-page-down.jpg);
+    width: 100%;
+    .img_comp_slider {
+        position: absolute;
+        height: 100%;
+        z-index: 10;
+        transform: translateX(360px);
+       
+          
+    }
+}
+.hidden-phote{
+    position: absolute;
+    z-index: 5;
+    height: 100%;
+    width: 60%;
+    overflow: hidden;
+}
+
+
+.third-page__input {
+    position: absolute;
+    cursor: e-resize;
+    z-index: 15;
+    width: 100%;
+    height: 100%;
+    opacity:0;
+}
+

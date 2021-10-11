@@ -1,0 +1,64 @@
+.header {
+    padding: 62px 0;
+    // margin: 0 auto;
+    @include media-portrete {
+        padding: 35px 0;
+    }
+
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include media-landskape {
+       margin: 0; 
+       padding: 0 20px;
+       max-width: ($content-width-landskape)-60px;
+    }
+
+}
+
+
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 775px;
+    align-items: center;
+    @include media-landskape {
+        display: none;
+        max-width: 350px;
+    }
+
+}
+
+.navigation__link {
+    font-weight: 200;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    letter-spacing: 2px;
+}
+
+//svg
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.louvre__svg {
+    background-image: url(/assets/svg/Vector-louvre.svg);
+    width: 49px;
+    height: 26px;
+    @include media-phone {
+        margin: 0px 5px 0 0;
+    }
+    margin: 0px 20px 0 0;
+    display: inline-block;
+
+   &:hover{
+    filter: invert(52%) sepia(27%) saturate(431%)
+      brightness(85%) contrast(87%);
+      transition: 1.5s;
+  }
+}

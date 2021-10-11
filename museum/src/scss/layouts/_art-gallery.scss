@@ -1,0 +1,108 @@
+.art-gellery {
+    @extend %section;
+    .page-gallery{
+        padding: 75px 0;
+        @include media-landskape {
+          padding: 60px 0;
+      }
+      @include media-portrete {
+        padding: 40px 20px;
+    }
+    
+    }
+   }
+
+   
+  .page-gallery {
+    margin: 0;
+    
+  }
+  .picture-container {
+    overflow-y: hidden;
+    max-height: 1950px;
+    width: $content-width-desktop;
+    @include media-landskape {
+     max-width: ($content-width-landskape)-40px;
+     max-height: 1265px;
+   }
+   @include media-portrete {
+   max-width: ($content-width-portrete)-20px;
+    max-height: 1080px;
+  }
+  @include media-phone {
+    max-width: ($content-width-phone)-20px;
+     max-height: 640px;
+   }
+   @include media-min {
+    max-width: ($content-width-min)-20px;
+     max-height: 640px;
+   }
+}
+  
+  .picture-inner-container {
+    max-height: 2950px;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 24px 36px;
+    @include media-landskape {
+      max-height: 1950px;
+    }
+    @include media-landskape {
+      max-height: 2050px;
+    }
+    @include media-portrete {
+      max-height: 5250px;
+      padding-left: 20px;
+      gap: 24px 24px;
+      justify-content: space-around;
+    }
+
+    @include media-phone {
+      max-height: 2250px;
+      padding-left: 20px;
+    }
+    @include media-phone {
+      max-height: 1250px;
+      padding-left: 20px;
+    }
+  }
+
+  .picture-gallery {
+    width: 456px;
+    max-height: 570px;
+    column-gap: 36px;
+    opacity: 0;
+    transition: 1.5s ease-in-out;
+   &:first-child{
+       padding-top: 50px;
+   }
+  /* &:nth-child(7n) {
+    padding-top: 50px;
+   }*/
+   @include media-landskape {
+    max-width: 304px;
+    max-height: 380px;
+   }
+   @include media-portrete {
+    max-width: 352px;
+    max-height: 440px;
+   }
+   @include media-phone {
+    max-width: 178px;
+    max-height: 225px;
+    &:nth-child(11n) {
+      padding-top: 0px;
+     }
+   }
+   @include media-min {
+    max-width: 125px;
+    max-height: 225px;
+  }
+  }
+
+  .active {
+    opacity: 1;
+    transition: 1.5s ease-in-out;
+  }

@@ -1,0 +1,143 @@
+.tickets {
+    @extend %section;
+   }
+
+   .wrapper__tickets {
+    @extend %wrapper_section;
+    margin: 75px auto;
+    @include media-landskape {
+        margin: 60px auto;
+        padding: 0 20px;
+    }
+    @include media-portrete {
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+   }
+
+.photo-tickets {
+    max-width: 720px;
+    max-height: 550px;
+    @include media-landskape {
+        max-width: 70%;
+    }
+  }
+
+
+  .tickets {
+    padding: 75px 0;
+  }
+
+  .tickets_part {
+      display: flex;
+      flex-direction: row;
+  }
+  .tickets-photo-buying {
+    display: flex;
+    flex-direction: row;
+    padding-top: 75px;
+    @include media-landskape {
+        flex-direction: column;
+    }
+  }
+  .radio-btn {
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+  }
+  .amount {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding-left: 60px;
+  }
+
+  .circlemark {
+    margin-right: 20px;
+    height: 17px;
+    width: 17px;
+  }
+  input[type="radio"]:after {
+    width: 15px;
+    height: 15px;
+    top: -5px;
+    left: -1px;
+    border-radius: 17px;
+    position: relative;
+    background-color: $color-font-light;
+    content: "";
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid $color-bg-dark;
+  }
+  input[type="radio"]:checked:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    position: relative;
+    background-color: $color-bg-dark;
+    content: "";
+    display: inline-block;
+  
+    border: 2px solid $color-bg-dark;
+  }
+  
+  .padTxt {
+    padding-top: 30px;
+  }
+  .amount-input {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    border: 3px solid $color-bg-dark;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 25px;
+  }
+  
+  .centre {
+    border: 0px;
+    text-align: center;
+    float: left;
+  }
+  
+  .age {
+    text-align: start;
+  }
+  .amount button {
+    background-color: $color-font-light;
+    border: 0;
+    font-size: 32px;
+  }
+  .buy {
+    margin: 0;
+    border: $color-font-light;
+    color: $color-font-light;
+    background-color: $color-bg-dark;
+    border-radius: 2px;
+    margin-top: 30px;
+    padding: 15px 40px;
+  }
+  .buy:hover {
+    background-color: $color-photo-hover;
+    color: $color-bg-dark;
+  }
+  .parallax {
+    width: 1920px;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .calculate {
+    display: flex;
+    flex-direction: column;
+  .change_price {
+    max-height: 50px;
+    padding-left: 40%;
+    font-weight: 800;
+    font-size: 3rem;
+    &:hover {
+      color:$color-dark-red;
+    }
+  }
+}
