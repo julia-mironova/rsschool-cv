@@ -47,16 +47,16 @@ window.addEventListener('load', function () {
 function mouseTimeToScroll(func, wait=50, immediate = true) {
   var timeout;
   return function() {
-    var contex = this, args = arguments;
+    var context = this; var args = arguments;
     
     var later = function() {
       timeout = null;
-      if (!immediate) func.applay(context, args);
+      if (!immediate) func.apply(context, args);
     };
     var callnow = immediate && !timeout;
     clearTimeout(timeout);
     timeout = setTimeout(later, wait);
-    if (callnow) func.applay(context, args);
+    if (callnow) func.apply(context, args);
   };
 
 };
@@ -80,4 +80,4 @@ function checkPhotoPosition(e) {
   })
 }
 
-window.addEventListener('scroll', checkPhotoPosition);
+window.addEventListener('scroll', mouseTimeToScroll(checkPhotoPosition));
