@@ -45,6 +45,8 @@
         z-index: 1;
         max-width:$content-width-desktop;
         max-height: 252px;
+        transition: 1s ease-in;
+
         @include media-portrete {
             max-width: $content-width-portrete;
         }
@@ -52,6 +54,7 @@
      .video-small {
          display: flex;
          flex-wrap: wrap-reverse;
+         transition: 1s ease-in;
         @extend %element_row; 
         @include media-portrete {
             max-width: ($content-width-portrete)-40px;

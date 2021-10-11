@@ -1420,6 +1420,7 @@ a {
   z-index: 1;
   max-width: 1440px;
   max-height: 252px;
+  transition: 1s ease-in;
   overflow: hidden;
 }
 @media (max-width: 768px) {
@@ -1430,6 +1431,7 @@ a {
 .wrapper__video .video_window-view .video-small {
   display: flex;
   flex-wrap: wrap-reverse;
+  transition: 1s ease-in;
 }
 @media (max-width: 768px) {
   .wrapper__video .video_window-view .video-small {
