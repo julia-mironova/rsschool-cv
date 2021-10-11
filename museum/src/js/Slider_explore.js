@@ -11,10 +11,10 @@ document.querySelector('.explore_page').addEventListener('mousemove', function (
 function getValue() {
    let inputValue = document.getElementById('picture-explore-input');
    workValue = inputValue.value;
-   console.log(`workValue=${workValue}`); 
+  // console.log(`workValue=${workValue}`); 
    updateSliderLine();
    updatePhotoWidth();
-   console.log(`sliderLine=${sliderLine.style.transform}`); 
+  // console.log(`sliderLine=${sliderLine.style.transform}`); 
 }
 
 const updateSliderLine = () => {
