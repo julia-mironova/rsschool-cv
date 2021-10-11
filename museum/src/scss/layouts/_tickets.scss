@@ -83,7 +83,7 @@
   }
   
   .padTxt {
-    padding: 30px 0;
+    padding-top: 30px;
   }
   .amount-input {
     display: flex;
@@ -127,3 +127,17 @@
     height: 400px;
     margin: 0 auto;
   }
+
+  .calculate {
+    display: flex;
+    flex-direction: column;
+  .change_price {
+    max-height: 50px;
+    padding-left: 40%;
+    font-weight: 800;
+    font-size: 3rem;
+    &:hover {
+      color:$color-dark-red;
+    }
+  }
+}

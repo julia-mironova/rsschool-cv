@@ -11,6 +11,8 @@ let soundOf = document.querySelector(".player-sound");
 let soundImg = document.querySelector(".noSound");
 let screenImg = document.querySelector(".screenBig");
 
+
+
 function videoStatus() {
   if (video.paused) {
     video.play();
@@ -60,7 +62,7 @@ play.addEventListener("click", videoStatus);
 //bigPlay.addEventListener("click", videoStatus);
 video.addEventListener("click", videoStatus);
 soundOf.addEventListener("click", soundOnOf);
-progressVideo.addEventListener("change", changeRange);
+//soundOf.onkeypress("KeyM", soundOnOf); 
 progressSound.addEventListener("change", changeRange);
 video.addEventListener("timeupdate", videoPracentege);
 fullScreen.addEventListener("click", screen);

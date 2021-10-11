@@ -1677,7 +1677,7 @@ input[type=radio]:checked:after {
 }
 
 .padTxt {
-  padding: 30px 0;
+  padding-top: 30px;
 }
 
 .amount-input {
@@ -1725,6 +1725,20 @@ input[type=radio]:checked:after {
   width: 1920px;
   height: 400px;
   margin: 0 auto;
+}
+
+.calculate {
+  display: flex;
+  flex-direction: column;
+}
+.calculate .change_price {
+  max-height: 50px;
+  padding-left: 40%;
+  font-weight: 800;
+  font-size: 3rem;
+}
+.calculate .change_price:hover {
+  color: #710707;
 }
 
 /*# sourceMappingURL=style.css.map */
