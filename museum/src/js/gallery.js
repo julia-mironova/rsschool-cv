@@ -42,3 +42,42 @@ window.addEventListener('load', function () {
   
 });
 
+//Gallery photo by height
+//.picture-gallery: opasiti from 0 to 1 transition: 0.7s ease-in-out;
+function mouseTimeToScroll(func, wait=50, immediate = true) {
+  var timeout;
+  return function() {
+    var contex = this, args = arguments;
+    
+    var later = function() {
+      timeout = null;
+      if (!immediate) func.applay(context, args);
+    };
+    var callnow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callnow) func.applay(context, args);
+  };
+
+};
+
+// mouseTimeToScroll(checkPhotoPosition) - context =this(?
+
+const photoGoImages = document.querySelectorAll('.picture-gallery');
+
+function checkPhotoPosition(e) {
+  photoGoImages.forEach(photoGo => {
+    const photoInPos = (window.scrollY+window.innerHeight)-photoGo.height/20;
+    const photoBottom = photoGo.offsetTop + photoGo.height; 
+    const photoHalfShown = photoInPos> photoBottom;
+    const notScrolledPast = window.scrollY < photoBottom;
+    if (photoHalfShown && notScrolledPast) {
+      photoGo.classList.add('active');
+    } else {
+      photoGo.classList.remove('active');
+    }                                         
+    
+  })
+}
+
+window.addEventListener('scroll', checkPhotoPosition);

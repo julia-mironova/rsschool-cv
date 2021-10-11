@@ -167,6 +167,8 @@ button {
     height: 85px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    padding: 0 15px;
   }
   .player-play-5s,
   .player-next-5s,
@@ -194,10 +196,9 @@ button {
     width: 36px;
   }
   .progress-video {
-    width: 820px;
+    width: 920px;
   }
   .progress-sound {
     width: 155px;
   }
-  
   

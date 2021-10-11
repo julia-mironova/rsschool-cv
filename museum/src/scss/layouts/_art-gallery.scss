@@ -15,6 +15,7 @@
    
   .page-gallery {
     margin: 0;
+    
   }
   .picture-container {
     overflow-y: hidden;
@@ -72,6 +73,8 @@
     width: 456px;
     max-height: 570px;
     column-gap: 36px;
+    opacity: 0;
+    transition: 1.5s ease-in-out;
    &:first-child{
        padding-top: 50px;
    }
@@ -97,4 +100,9 @@
     max-width: 125px;
     max-height: 225px;
   }
+  }
+
+  .active {
+    opacity: 1;
+    transition: 1.5s ease-in-out;
   }

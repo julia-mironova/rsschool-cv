@@ -1334,6 +1334,8 @@ a {
   width: 456px;
   max-height: 570px;
   column-gap: 36px;
+  opacity: 0;
+  transition: 1.5s ease-in-out;
   /* &:nth-child(7n) {
     padding-top: 50px;
    }*/
@@ -1367,6 +1369,11 @@ a {
     max-width: 125px;
     max-height: 225px;
   }
+}
+
+.active {
+  opacity: 1;
+  transition: 1.5s ease-in-out;
 }
 
 .wrapper__video {
@@ -1544,6 +1551,8 @@ button {
   height: 85px;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  padding: 0 15px;
 }
 
 .player-play-5s,
@@ -1579,7 +1588,7 @@ button {
 }
 
 .progress-video {
-  width: 820px;
+  width: 920px;
 }
 
 .progress-sound {
