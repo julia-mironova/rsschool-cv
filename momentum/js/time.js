@@ -23,32 +23,27 @@ function showDate() {
 showDate();
 
 //определяем тип приветствия (день-утро-ночь)
+ 
 function showGreeting() {
     const date = new Date();
     const hours = date.getHours();
     return hours;
 }
 
-
 function getTimeOfDay() {
-    let partOfDay = Math.ceil(showGreeting()/6, 1);
-    switch (partOfDay) {
-        case 2:
-            greeting.innerText = "Good morning";
-            break;
-        case 3:
-            greeting.innerText = "Good afternoon";
-            break;
-        case 4:
-            greeting.innerText = "Good evening";
-            break;
-        case 1:
-        case 0:            
-            greeting.innerText = "Good night";
-            break;
-       }   
+    let partOfDay = showGreeting()/6;
+    if (partOfDay < 3 && partOfDay >= 2) {
+        greeting.innerText = "Good afternoon";
+    } else if (partOfDay < 4 && partOfDay >= 3) {
+        greeting.innerText = "Good evening";
+    } else if  (partOfDay < 1 && partOfDay >= 0) {
+        greeting.innerText = "Good night";
+    } else if  (partOfDay < 2 && partOfDay >= 1) {
+        greeting.innerText = "Good morning";
+    }
        setTimeout(getTimeOfDay, 3600000);
 }
+ 
 
 getTimeOfDay();
 
@@ -65,3 +60,4 @@ function getLocalStorage() {
     }
 }
 window.addEventListener('load', getLocalStorage);
+
