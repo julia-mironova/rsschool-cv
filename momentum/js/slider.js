@@ -37,7 +37,7 @@ function setBg() {
     let partOfDay = getPartOfDay();
     let num = String(getRandomNum());
     let bgNum = num.padStart(2, "0");
-    let way = `"url('https://raw.githubusercontent.com/julia-mironova/stage1-tasks/assets/images/${partOfDay}/${bgNum}.jpg')"` 
+    let way = `url('https://raw.githubusercontent.com/julia-mironova/stage1-tasks/assets/images/${partOfDay}/${bgNum}.jpg')` 
    //url('https://raw.githubusercontent.com/julia-mironova/stage1-tasks/assets/images/afternoon/12.jpg'
    bodyImg.style.background = way;
    bodyImg.style.backgroundSize = "100% 100%"; 
@@ -45,5 +45,5 @@ function setBg() {
 }
 setBg();
 
-bodyImg.style.background = "url('https://raw.githubusercontent.com/julia-mironova/stage1-tasks/assets/images/afternoon/13.jpg";
-bodyImg.style.backgroundSize = "100% 100%"; //потом удалить как функция заработает
+//bodyImg.style.background = "url('https://raw.githubusercontent.com/julia-mironova/stage1-tasks/assets/images/afternoon/13.jpg";
+//bodyImg.style.backgroundSize = "100% 100%"; //потом удалить как функция заработает
