@@ -16,8 +16,8 @@ body {
   font-size: 16px;
   color: #fff;
   text-align: center;
-  background: url("/assets/img/background-1st-page.jpg"); 
-  /*center/cover, rgba(0, 0, 0, 0.5); - ИЗЪЯЛА ИЗ бэкграунда*/
+  /*background: url("/assets/img/background-1st-page.jpg"); 
+  center/cover, rgba(0, 0, 0, 0.5); - ИЗЪЯЛА ИЗ бэкграунда*/
   background-blend-mode: multiply;
   transition: background-image 1s ease-in-out;
 }
