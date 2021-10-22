@@ -119,6 +119,38 @@ body {
   background-image: url("../assets/svg/play-next.svg");
 }
 
+ul {
+  cursor: pointer;
+  
+}
+
+.gimn {
+  padding: 0 0 10px 15px;
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.gimn:hover {
+  color: #C5B358;
+}
+
+li {
+  margin-left: 25px;
+  transition: all 0.2s ease-in-out;
+}
+
+li::marker {
+  content: '✔';
+}
+
+li:hover {
+  color: #C5B358;
+}
+
+.yellow {
+  color:gold;
+}
+
 .weather {
   display: flex;
   flex-direction: column;
