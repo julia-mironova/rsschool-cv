@@ -1,6 +1,8 @@
 
 const greeting = document.querySelector(".greeting");
-const bodyImg = document.getElementById('bodyImg');
+const bodyImg = document.getElementById("bodyImg");
+const slideNext = document.querySelector(".slide-next");
+const slidePrev = document.querySelector(".slide-prev");
 
 function showGreeting() {
     const date = new Date();
@@ -32,11 +34,16 @@ function getRandomNum() {
     }
     return num;
 }
+
+let num = String(getRandomNum());
+let bgNum = num.padStart(2, "0");
+
+
+
+
 //функция должна работать и правильно писать строку
 function setBg() {
     let partOfDay = getPartOfDay();
-    let num = String(getRandomNum());
-    let bgNum = num.padStart(2, "0");
     let way = `url('https://raw.githubusercontent.com/julia-mironova/stage1-tasks/assets/images/${partOfDay}/${bgNum}.jpg')` 
    //url('https://raw.githubusercontent.com/julia-mironova/stage1-tasks/assets/images/afternoon/12.jpg'
    bodyImg.style.background = way;
@@ -45,5 +52,45 @@ function setBg() {
 }
 setBg();
 
-//bodyImg.style.background = "url('https://raw.githubusercontent.com/julia-mironova/stage1-tasks/assets/images/afternoon/13.jpg";
-//bodyImg.style.backgroundSize = "100% 100%"; //потом удалить как функция заработает
+
+slideNext.addEventListener('click', getSlideNext);
+function getSlideNext() {
+    let partOfDay = getPartOfDay();
+    let bgNumNext = +bgNum+1;
+    let bgNumNextSlide;
+    if (bgNumNext<=20) {
+        bgNumNext = String(+bgNum+1);
+        bgNumNextSlide = bgNumNext.padStart(2, "0");
+        bgNum++;
+    } else {
+        bgNum = 0;
+        bgNumNext = String(+bgNum+1);
+        bgNumNextSlide = bgNumNext.padStart(2, "0");
+        bgNum++;
+    }
+    let way = `url('https://raw.githubusercontent.com/julia-mironova/stage1-tasks/assets/images/${partOfDay}/${bgNumNextSlide}.jpg')` 
+    bodyImg.style.background = way;
+    bodyImg.style.backgroundSize = "100% 100%"; 
+     
+}
+//назад листаем
+slidePrev.addEventListener('click', getSlidePrev);
+function getSlidePrev() {
+    let partOfDay = getPartOfDay();
+    let bgNumPrev = +bgNum-1;
+    let bgNumPrevSlide;
+    if (bgNumPrev>=1) {
+        bgNumPrev = String(+bgNum-1);
+        bgNumPrevSlide = bgNumPrev.padStart(2, "0");
+        bgNum--;
+    } else {
+        bgNum = 21;
+        bgNumPrev = String(+bgNum-1);
+        bgNumPrevSlide = bgNumPrev.padStart(2, "0");
+        bgNum--;
+    }
+    let way = `url('https://raw.githubusercontent.com/julia-mironova/stage1-tasks/assets/images/${partOfDay}/${bgNumPrevSlide}.jpg')` 
+    bodyImg.style.background = way;
+    bodyImg.style.backgroundSize = "100% 100%"; 
+     
+}
