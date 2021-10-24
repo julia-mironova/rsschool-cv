@@ -34,12 +34,16 @@ function getTimeOfDay() {
     let partOfDay = showGreeting()/6;
     if (partOfDay < 3 && partOfDay >= 2) {
         greeting.innerText = "Good afternoon";
+        greeting.setAttribute('key', "afternoon");
     } else if (partOfDay < 4 && partOfDay >= 3) {
         greeting.innerText = "Good evening";
+        greeting.setAttribute('key',"evening");
     } else if  (partOfDay < 1 && partOfDay >= 0) {
         greeting.innerText = "Good night";
+        greeting.setAttribute('key',"night");
     } else if  (partOfDay < 2 && partOfDay >= 1) {
         greeting.innerText = "Good morning";
+        greeting.setAttribute('key',"morning");
     }
        setTimeout(getTimeOfDay, 3600000);
 }
