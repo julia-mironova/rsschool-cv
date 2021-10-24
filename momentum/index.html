@@ -21,10 +21,14 @@
       <li><span class="gimn">Student gimn</span></li> 
       <li><span class="gimn">Love gimn</span></li>          
       <li><span class="gimn">Victory gimn</span></li>
-        
-      
-      
-      </ul>
+     </ul>
+    </div>
+
+
+    <!--<div class = "settings">
+      <button class="setting_btn">Settings</button>
+      <option>Language</option>
+      <optgroup>Blocks</optgroup>-->
     </div>
     <div class="weather">
       <input type="text" class="city" placeholder="Is your city Minsk?" value="Minsk" id="city"/>
@@ -49,8 +53,29 @@
       <span class="greeting"></span>
       <input type="text" class="name" placeholder="[Enter name]" id="userName"/>
     </div>
+    
+    
+
+
   </main>
   <footer class="footer">
+    <div class="to_do_list">
+      <div id="myDIV" class="headerTodo">
+          <h2>My To Do List</h2>
+          <input type="text" id="myInput" placeholder="What to do...">
+          <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+        
+        <ul id="myUL">
+          <li class="to_do">Do translate to ru</li>
+          <li class="to_do">make player</li>
+          <li class="to_do">make seetings</li>
+          <li class="to_do">lern how work players</li>
+          <li class="to_do">look rs school materials</li>
+          <li class="to_do">sleep</li>
+        </ul>
+      </div>
+
     <button class="change-quote"></button>
     <div>
       <div class="quote"></div>
@@ -63,6 +88,8 @@
   <script  type="module" src="js/time.js"></script>
   <script  type="module" src="js/slider.js"></script>
   <script  type="module" src="js/weather.js"></script>
+  <script src="js/settingTranslate.js"></script>
+  <script src="js/todolist.js"></script>
 </body>
 </html>
 
