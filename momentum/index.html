@@ -24,46 +24,45 @@
      </ul>
     </div>
 
+    <div>
     <form class="settings">
-      <p><select name="settings" class="form_setting">
-       <optgroup label="Language">
+      <p><select name="settings" class="form_setting" id="selector">
+       <optgroup label="Languages">
         <option value="en">English</option>
         <option value="ru">Russian</option>
       </optgroup>
        <optgroup label="Blocks" aria-multiselectable="true">
         <option value="greeting">Greeting</option>
         <option value="time">Time</option>
-        <option value="weather">Wether</option>
+        <option value="weather">Weather</option>
         <option value="player">Player</option>
         <option value="todolist">To do list</option>
         <option value="quote">Quote</option>
        </optgroup>
       </select></p>
-      <p><input type="submit" value="Submit" class="form_setting"></p>
+     <!-- <p><input type="submit" value="Submit" class="submit form_setting"></p>-->
      </form>
 
      <nav>
-       <ul>
-         <li class="toEn"><button id="en" class="translate">En</button></li>
-         <li class="toRu"><button id="ru" class="translate">Ru</button></li>
+       <ul class="language">
+         <li class="toEn"><button id="en" ><img class="translate" src="assets/flags/GB.png" alt="Eng"></button></li>
+         <li class="toRu"><button id="ru" ><img class="translate" src="assets/flags/RF.png" alt="Rus"></button></li>
        </ul>
      </nav>
+    </div>
 
-    <!--<div class = "settings">
-      <button class="setting_btn">Settings</button>
-      <option>Language</option>
-      <optgroup>Blocks</optgroup>-->
+   
     </div>
     <div class="weather">
-      <input type="text" class="city" placeholder="Is your city Minsk?" value="Minsk" id="city"/>
-      <i class="weather-icon owf"></i>
-      <div class="weather-error"></div>
+      <input type="text" class="city" key="cityT" placeholder="Is your city Minsk?"  value="Minsk" id="city"/>
+      <i class="weather-icon owf" ></i>
+      <div class="weather-error" key="error"></div>
       <div class="description-container">
-        <span class="temperature"></span>
-        <span class="weather-description"></span>
+        <span class="temperature" key="temperatyre"></span>
+        <span class="weather-description" ></span>
       </div>
-      <div class="wind"></div>
-      <div class="humidity"></div>
+      <div class="wind" key="wind"></div>
+      <div class="humidity" key="humidity"></div>
     </div>
   </header>
   <main class="main">
@@ -78,9 +77,6 @@
       <input type="text" class="name lang" key="name" placeholder="[Enter name]" id="userName"/>
     </div>
     
-    
-
-
   </main>
   <footer class="footer">
     <div class="to_do_list">
@@ -101,7 +97,7 @@
       </div>
 
     <button class="change-quote"></button>
-    <div>
+    <div class="quoteAll">
       <div class="quote"></div>
       <div class="author"></div>
     </div>

@@ -31,6 +31,9 @@ body {
   min-height: 220px;  
   padding: 20px;
 }
+.player {
+  transition: 1s ease-in-out;
+}
 
 .player-controls {
   display: flex;
@@ -164,7 +167,7 @@ color: orange;
 .form_setting {
     border-radius: 20%;
     padding: 10px;
-    margin-top: 20px;
+    margin: 20px 0;
     font-size: 26px;
     letter-spacing: 2px;
     opacity: 0.6;
@@ -202,6 +205,7 @@ color: orange;
   width: 180px;
   min-height: 180px;  
   text-align: left;
+  transition: 0.5s ease-in-out;
 }
 
 .weather-error {
@@ -274,6 +278,7 @@ color: orange;
   font-family: 'Arial-MT';
   font-size: 100px;
   letter-spacing: -4px;  
+  transition: 0.5s ease-in-out;
 }
 
 .date {
@@ -290,6 +295,7 @@ color: orange;
   min-height: 48px;
   width: 100vw;
   font-size: 40px;
+  transition: 0.5s ease-in-out;
 }
 
 .greeting {
@@ -329,8 +335,11 @@ color: orange;
 .change-quote {
   margin-bottom: 30px;
   background-image: url("../assets/svg/reload.svg");  
+  transition: 1s ease-in-out;
 }
-
+.quoteAll {
+  transition: 1s ease-in-out;
+}
 .quote {
   min-height: 32px;
 }
@@ -368,6 +377,7 @@ box-sizing: border-box;
 max-width: 500px;
 max-height: 270px;
 overflow-y: scroll;
+transition: 1s ease-in-out;
 }
 #myUL {
   margin: 0;
@@ -474,3 +484,33 @@ input {
 .addBtn:hover {
   background-color: rgb(188, 218, 21);
 }
+
+/*translate*/
+
+li.toEn::marker,
+li.toRu::marker {
+ content: none;
+ 
+}
+
+ul.language li {
+  display: inline; /* Отображать как строчный элемент */
+  margin-right: 5px;
+  }
+
+  .translate {
+   width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  opacity: 0;
+  }
+
+  .translate:hover {
+    transform: scale(1.2);
+  }
+  #en,
+  #ru {
+   border: none;
+   height: 0; 
+  }
