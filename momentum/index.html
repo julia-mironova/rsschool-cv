@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum Mironova</title>
+</head>
+<body id="bodyImg">
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="change-btn pause-btn play player-icon" ></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <ul class="play-list">
+      <li><span class="gimn">Hope gimn</span></li> 
+      <li><span class="gimn">Student gimn</span></li> 
+      <li><span class="gimn">Love gimn</span></li>          
+      <li><span class="gimn">Victory gimn</span></li>
+     </ul>
+    </div>
+
+    <div>
+    <form class="settings">
+      <p><select name="settings" class="form_setting" id="selector">
+       <optgroup label="Languages">
+        <option value="en">English</option>
+        <option value="ru">Russian</option>
+      </optgroup>
+       <optgroup label="Blocks" aria-multiselectable="true">
+        <option value="greeting">Greeting</option>
+        <option value="time">Time</option>
+        <option value="weather">Weather</option>
+        <option value="player">Player</option>
+        <option value="todolist">To do list</option>
+        <option value="quote">Quote</option>
+       </optgroup>
+      </select></p>
+     <!-- <p><input type="submit" value="Submit" class="submit form_setting"></p>-->
+     </form>
+
+     <nav>
+       <ul class="language">
+         <li class="toEn"><button id="en" ><img class="translate" src="assets/flags/GB.png" alt="Eng"></button></li>
+         <li class="toRu"><button id="ru" ><img class="translate" src="assets/flags/RF.png" alt="Rus"></button></li>
+       </ul>
+     </nav>
+    </div>
+
+   
+    </div>
+    <div class="weather">
+      <input type="text" class="city" key="cityT" placeholder="Is your city Minsk?"  value="Minsk" id="city"/>
+      <i class="weather-icon owf" ></i>
+      <div class="weather-error" key="error"></div>
+      <div class="description-container">
+        <span class="temperature" key="temperatyre"></span>
+        <span class="weather-description" ></span>
+      </div>
+      <div class="wind" key="wind"></div>
+      <div class="humidity" key="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting lang" key="afternoon"></span>
+      <input type="text" class="name lang" key="name" placeholder="[Enter name]" id="userName"/>
+    </div>
+    
+  </main>
+  <footer class="footer">
+    <div class="to_do_list">
+      <div id="myDIV" class="headerTodo">
+          <h2>My To Do List</h2>
+          <input type="text" id="myInput" placeholder="What to do...">
+          <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+        
+        <ul id="myUL">
+          <li class="to_do">Do translate to ru</li>
+          <li class="to_do">make player</li>
+          <li class="to_do">make seetings</li>
+          <li class="to_do">lern how work players</li>
+          <li class="to_do">look rs school materials</li>
+          <li class="to_do">sleep</li>
+        </ul>
+      </div>
+
+    <button class="change-quote"></button>
+    <div class="quoteAll">
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+    <div class="info">
+    <img
+              class="logo"
+              src="https://rs.school/images/rs_school_js.svg"
+              alt="logo RS school"
+            />
+            <time class="dateDo" datetime="2021-10-20"> October 2021</time>
+            <ul id="links">
+              <li>
+                <a class="sites" href="https://github.com/julia-mironova"
+                  ><span class="blue"
+                    ><i>Github link to julia-mironova</i></span
+                  >
+                </a>
+              </li>
+              <li>
+                <a class="sites" href="https://rs.school/js/"
+                  ><span class="blue"
+                    ><i>Link to the course in RS school</i></span
+                  >
+                </a>
+              </li>
+            </ul>
+            
+          </div>
+  </footer>
+  <script type="text/javascript" src="json/citaty.json"></script>
+  <script type="module" src="js/audiopleer.js" ></script>
+  <script  type="module" src="js/daytext.js"></script>
+  <script  type="module" src="js/time.js"></script>
+  <script  type="module" src="js/slider.js"></script>
+  <script  type="module" src="js/weather.js"></script>
+  <script type="module" src="js/settingTranslate.js"></script>
+  <script src="js/todolist.js"></script>
+  <script src="js/selfestimation.js"></script>
+</body>
+</html>
+
+<!--<script src="js/script.js"></script>-->
