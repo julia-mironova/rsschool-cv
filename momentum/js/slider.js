@@ -47,7 +47,8 @@ function setBg() {
     let way = `url('https://raw.githubusercontent.com/julia-mironova/stage1-tasks/assets/images/${partOfDay}/${bgNum}.jpg')` 
    //url('https://raw.githubusercontent.com/julia-mironova/stage1-tasks/assets/images/afternoon/12.jpg'
    bodyImg.style.background = way;
-   bodyImg.style.backgroundSize = "100% 100%"; 
+   bodyImg.style.backgroundSize = "cover"; 
+   bodyImg.style.backgroundRrepeat = "no-repeat";
    setTimeout(setBg, 3600000);
 }
 setBg();
