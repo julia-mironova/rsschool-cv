@@ -40,10 +40,9 @@
 							<h3>Front-End Developer (junior / stager)</h3>
 							<br />
 
-							I am beginner front-end developer from Belarus, which is living in
-							Wroclaw now.<br />
-							I'm searching for knowledge about how to change, update, perfome and modern websites.<br />
-              Today i know how make front-end part of the onepage applikation from desigen in figma. </br>
+							I am a beginner front-end developer from Belarus, who is living in Wroclaw now.<br />
+							I'm searching for knowledge about how to change, update, perform and modern websites.<br />
+              Today I know how to make the front-end part of the onepage application from design in figma. </br>
 							My current status: <b>RS school course Stage#3</b> (introduction to React).<p>
 								<b>My expectations:</b> <br />
 								* find job in company with a mentor (sometimes I need help)<br />
@@ -63,76 +62,83 @@
 
 					<!--main contener section-->
 					<section class="projects mobile-reverse" id="Projects">
-						<h2>Projects</h2>
+						<h2>Projects (2021-2022)</h2>
 
 						<ol class="small">
 							<li>
 								<a
 									class="sites"
-									href="https://stupefied-jepsen-ef824c.netlify.app/"
+									href="https://christmas-task2-mironova.netlify.app/"
 								>
-									<span class="blue"><i>Fundacia WiWa__</i></span> (just for
-									phones now)
+									<span class="blue"><i>Christmas tree</i></span>
 								</a>
 
-								<span
-									>[2021, Html+Css] (Place, where parents can find halp for
-									their children)</span
-								>
+								<span>[2022, Html+CSS+TS] (Game)</span>
 							</li>
 							<li>
-								<a class="sites" href="https://epic-neumann-488e7a.netlify.app/"
-									><span class="blue"><i>About Belarus factories__</i></span></a
+								<a class="sites" href="https://momentum-julia-mironova.netlify.app/"
+									><span class="blue"><i>Application for desktop decoraion</i></span></a
 								>
 
 								<span
-									>[2021, Html+Css+JS] (Small presentattion for Polish
-									lesson)</span
+									>[2021, Html+CSS+JS] (Simple and beautiful)</span
 								>
 							</li>
 							<li>
 								<a
 									class="sites"
-									href="https://docs.google.com/document/d/1ltDt4A2elUo_fjzFngR_MhR5NSB8pqwX7owuUz22PGg/edit"
-									><i>About insults__</i></a
+									href="https://mlatysheva.github.io/rslang/"
+									><span class="blue"><i>English learn</i></span></a
 								>
 
-								<span
-									>[2023, I'm still learn] (Social site for live after
-									insult)</span
-								>
+								<span>[2022, work with back-end, group task] (Education platform)</span>
 							</li>
 							<div class="column">
 								<a
 									class="sites"
-									href="https://stupefied-jepsen-ef824c.netlify.app/"
-									><img class="photo-proj" src="img/WiWa.jpg" alt="photo-site"
+									href="https://christmas-task2-mironova.netlify.app/"
+									><img class="photo-proj" src="img/christmas.jpg" alt="christmas-tree"
 								/></a>
 
-								<a class="sites" href="https://epic-neumann-488e7a.netlify.app/"
+								<a class="sites" href="https://mlatysheva.github.io/rslang/"
 									><img
 										class="photo-project"
-										src="img/slider.jpg"
-										alt="photo-site"
+										src="img/english.jpg"
+										alt="english-learn"
+								/></a>
+                <a class="sites" href="https://momentum-julia-mironova.netlify.app/"
+									><img
+										class="photo-project"
+										src="img/momentum.jpg"
+										alt="momentum"
 								/></a>
 							</div>
 							<li>
 								<i>Code example:</i>
 
 								<pre><code class="language-js small">
-function stringify(list) {
-  result = "";
-  result = JSON.stringify(new Node(list));
-  let answer = result.replace(/[^+\d]/g, " ");
-  answer = answer.replace(/\s{2,}/g, " ");
-  answer = answer.substring(1);
-  let answerOk = answer.replace(/\s{1,}/g, " -> ");
-  answerOk = answerOk + "null";
-  console.log(answerOk);
-  return answerOk;
+const arrUnicSort = (arr) => {
+  const thisHowMany = arr.reduce((acum, cur) => {
+    acum[cur] = (acum[cur] || 0) + 1;
+    return acum;
+  }, {});
+  const keys = Object.keys(thisHowMany);
+
+  return keys.sort((a, b) => {
+    return thisHowMany[b] - thisHowMany[a];
+  });
+};
+
+function add(x) {
+  let sum = 0;
+  return function addN(y) {
+    sum = x + y;
+    addN.result = sum;
+    return addN;
+  };
 }
-new Node(1, new Node(2, new Node(3)));
-console.log(`${result}`);
+
+
 </code></pre>
 							</li>
 						</ol>
