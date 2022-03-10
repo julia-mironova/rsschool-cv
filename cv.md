@@ -3,7 +3,7 @@
 I am _beginner front-end developer_ from Belarus, which is living in Wroclaw now.
 I'm searching for knowledge about how it works, how I can make workable webpages by myself.
 
-> I'm finished **stage#0** and continue on **stage#1** in **Rsschool**.
+> I'm finished **stage#0** **stage#1** **stage#2** and continue on **stage#3** in **Rsschool**.
 > Also I completed 2 weeks courses for beginners from **Ukranium school GoIT** (online). Also I made a small project for _**Fundacia WiWa** (children with cancer)_.
 
 - The main benefits for me:
@@ -101,7 +101,7 @@ Power supply engineer, 2011
  PS: the road will be mastered by the walking
 ```
 
-![alt](juli-to-resume-bw-min.jpg)
+![alt](./img/juli-to-resume-ok.jpg)
 
 ```
 
